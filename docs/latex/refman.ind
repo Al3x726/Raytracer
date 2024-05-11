@@ -1,0 +1,547 @@
+\begin{theindex}
+
+  \item {addDirectionalLight}
+    \subitem {Light}, \hyperpage{61}
+  \item {addPointLight}
+    \subitem {Light}, \hyperpage{61}
+  \item {addPrimitive}
+    \subitem {Scene}, \hyperpage{81}
+  \item {angle}
+    \subitem {Vector3D}, \hyperpage{94}
+
+  \indexspace
+
+  \item {blend}
+    \subitem {Color}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Camera}, \hyperpage{7}
+    \subitem {Camera}, \hyperpage{8, 9}
+    \subitem {getFov}, \hyperpage{9}
+    \subitem {getPixel}, \hyperpage{10}
+    \subitem {getPixels}, \hyperpage{10}
+    \subitem {getPosition}, \hyperpage{10}
+    \subitem {getRay}, \hyperpage{11}
+    \subitem {getResolution}, \hyperpage{11}
+    \subitem {getRotation}, \hyperpage{11}
+    \subitem {getType}, \hyperpage{11}
+    \subitem {operator=}, \hyperpage{12}
+    \subitem {setFov}, \hyperpage{12}
+    \subitem {setPixel}, \hyperpage{13}
+    \subitem {setPixels}, \hyperpage{13}
+    \subitem {setPosition}, \hyperpage{14}
+    \subitem {setResolution}, \hyperpage{14}
+    \subitem {setRotation}, \hyperpage{14}
+  \item {clamp}
+    \subitem {Vector3D}, \hyperpage{95}
+  \item {Color}, \hyperpage{15}
+    \subitem {blend}, \hyperpage{18}
+    \subitem {Color}, \hyperpage{17}
+    \subitem {gammaCorrection}, \hyperpage{18}
+    \subitem {getA}, \hyperpage{18}
+    \subitem {getB}, \hyperpage{19}
+    \subitem {getG}, \hyperpage{19}
+    \subitem {getR}, \hyperpage{19}
+    \subitem {lerp}, \hyperpage{19}
+    \subitem {mix}, \hyperpage{20}
+    \subitem {operator!=}, \hyperpage{20}
+    \subitem {operator$<$$<$}, \hyperpage{28}
+    \subitem {operator$\ast$}, \hyperpage{20, 21}
+    \subitem {operator$\ast$=}, \hyperpage{21, 22}
+    \subitem {operator+}, \hyperpage{22}
+    \subitem {operator+=}, \hyperpage{23}
+    \subitem {operator-\/}, \hyperpage{23, 24}
+    \subitem {operator-\/=}, \hyperpage{24}
+    \subitem {operator/}, \hyperpage{26}
+    \subitem {operator/=}, \hyperpage{26}, \hyperpage{28}
+    \subitem {operator=}, \hyperpage{28}, \hyperpage{30}
+    \subitem {operator==}, \hyperpage{30}
+    \subitem {setA}, \hyperpage{30}
+    \subitem {setB}, \hyperpage{32}
+    \subitem {setG}, \hyperpage{32}
+    \subitem {setR}, \hyperpage{32}
+  \item {Cone}, \hyperpage{33}
+    \subitem {Cone}, \hyperpage{34, 35}
+    \subitem {getColor}, \hyperpage{35}
+    \subitem {getDirection}, \hyperpage{35}
+    \subitem {getHeight}, \hyperpage{35}
+    \subitem {getNormal}, \hyperpage{36}
+    \subitem {getPosition}, \hyperpage{36}
+    \subitem {getRadius}, \hyperpage{36}
+    \subitem {intersect}, \hyperpage{36}
+    \subitem {normalize}, \hyperpage{37}
+    \subitem {operator=}, \hyperpage{37, 38}
+    \subitem {setDirection}, \hyperpage{38}
+    \subitem {setHeight}, \hyperpage{38}
+    \subitem {setPosition}, \hyperpage{38}
+    \subitem {setRadius}, \hyperpage{39}
+  \item {Config}, \hyperpage{39}
+    \subitem {Config}, \hyperpage{40}
+    \subitem {getRaySetting}, \hyperpage{40}
+  \item {Core}, \hyperpage{42}
+    \subitem {Core}, \hyperpage{42}
+  \item {createImage}
+    \subitem {ImagePPM}, \hyperpage{51}
+  \item {cross}
+    \subitem {Vector3D}, \hyperpage{95}
+  \item {Cylinder}, \hyperpage{43}
+    \subitem {Cylinder}, \hyperpage{44, 45}
+    \subitem {getColor}, \hyperpage{45}
+    \subitem {getHeight}, \hyperpage{45}
+    \subitem {getNormal}, \hyperpage{46}
+    \subitem {getPosition}, \hyperpage{46}
+    \subitem {getRadius}, \hyperpage{46}
+    \subitem {intersect}, \hyperpage{46}
+    \subitem {normalize}, \hyperpage{47}
+    \subitem {operator=}, \hyperpage{47, 48}
+    \subitem {setColor}, \hyperpage{48}
+    \subitem {setHeight}, \hyperpage{48}
+    \subitem {setPosition}, \hyperpage{48}
+    \subitem {setRadius}, \hyperpage{49}
+
+  \indexspace
+
+  \item {distance}
+    \subitem {Vector3D}, \hyperpage{96}
+  \item {division}
+    \subitem {Vector3D}, \hyperpage{96}
+  \item {dot}
+    \subitem {Vector3D}, \hyperpage{96}
+
+  \indexspace
+
+  \item {gammaCorrection}
+    \subitem {Color}, \hyperpage{18}
+  \item {getA}
+    \subitem {Color}, \hyperpage{18}
+  \item {getAmbient}
+    \subitem {Light}, \hyperpage{61}
+  \item {getAxis}
+    \subitem {Plane}, \hyperpage{69}
+  \item {getB}
+    \subitem {Color}, \hyperpage{19}
+  \item {getCamera}
+    \subitem {Scene}, \hyperpage{81}
+  \item {getCenter}
+    \subitem {Sphere}, \hyperpage{87}
+  \item {getColor}
+    \subitem {Cone}, \hyperpage{35}
+    \subitem {Cylinder}, \hyperpage{45}
+    \subitem {Iprimitives}, \hyperpage{56}
+    \subitem {Light}, \hyperpage{61}
+    \subitem {Plane}, \hyperpage{69}
+    \subitem {Sphere}, \hyperpage{88}
+  \item {getDiffuse}
+    \subitem {Light}, \hyperpage{62}
+  \item {getDirection}
+    \subitem {Cone}, \hyperpage{35}
+    \subitem {Ray}, \hyperpage{76}
+  \item {getDirectionalLights}
+    \subitem {Light}, \hyperpage{62}
+  \item {getFov}
+    \subitem {Camera}, \hyperpage{9}
+  \item {getG}
+    \subitem {Color}, \hyperpage{19}
+  \item {getHeight}
+    \subitem {Cone}, \hyperpage{35}
+    \subitem {Cylinder}, \hyperpage{45}
+    \subitem {ImagePPM}, \hyperpage{52}
+  \item {getIprimitives}
+    \subitem {Scene}, \hyperpage{81}
+  \item {getLight}
+    \subitem {Scene}, \hyperpage{81}
+  \item {getNormal}
+    \subitem {Cone}, \hyperpage{36}
+    \subitem {Cylinder}, \hyperpage{46}
+    \subitem {Iprimitives}, \hyperpage{57}
+    \subitem {Plane}, \hyperpage{69}
+    \subitem {Sphere}, \hyperpage{88}
+  \item {getOrigin}
+    \subitem {Ray}, \hyperpage{76}
+  \item {getPixel}
+    \subitem {Camera}, \hyperpage{10}
+    \subitem {ImagePPM}, \hyperpage{52}
+  \item {getPixels}
+    \subitem {Camera}, \hyperpage{10}
+    \subitem {ImagePPM}, \hyperpage{53}
+  \item {getPointLights}
+    \subitem {Light}, \hyperpage{62}
+  \item {getPosition}
+    \subitem {Camera}, \hyperpage{10}
+    \subitem {Cone}, \hyperpage{36}
+    \subitem {Cylinder}, \hyperpage{46}
+    \subitem {Plane}, \hyperpage{71}
+  \item {getR}
+    \subitem {Color}, \hyperpage{19}
+  \item {getRadius}
+    \subitem {Cone}, \hyperpage{36}
+    \subitem {Cylinder}, \hyperpage{46}
+    \subitem {Sphere}, \hyperpage{88}
+  \item {getRay}
+    \subitem {Camera}, \hyperpage{11}
+  \item {getRaySetting}
+    \subitem {Config}, \hyperpage{40}
+  \item {getResolution}
+    \subitem {Camera}, \hyperpage{11}
+  \item {getRotation}
+    \subitem {Camera}, \hyperpage{11}
+  \item {getType}
+    \subitem {Camera}, \hyperpage{11}
+    \subitem {Light}, \hyperpage{62}
+    \subitem {RaySetting}, \hyperpage{79}
+  \item {getVector}
+    \subitem {Vector3D}, \hyperpage{97}
+  \item {getWidth}
+    \subitem {ImagePPM}, \hyperpage{53}
+  \item {getX}
+    \subitem {Vector3D}, \hyperpage{97}
+  \item {getY}
+    \subitem {Vector3D}, \hyperpage{97}
+  \item {getZ}
+    \subitem {Vector3D}, \hyperpage{97}
+
+  \indexspace
+
+  \item {ImagePPM}, \hyperpage{49}
+    \subitem {createImage}, \hyperpage{51}
+    \subitem {getHeight}, \hyperpage{52}
+    \subitem {getPixel}, \hyperpage{52}
+    \subitem {getPixels}, \hyperpage{53}
+    \subitem {getWidth}, \hyperpage{53}
+    \subitem {ImagePPM}, \hyperpage{50, 51}
+    \subitem {operator=}, \hyperpage{53}
+    \subitem {setHeight}, \hyperpage{54}
+    \subitem {setPixel}, \hyperpage{54}
+    \subitem {setPixels}, \hyperpage{55}
+    \subitem {setSize}, \hyperpage{55}
+    \subitem {setWidth}, \hyperpage{55}
+  \item {intersect}
+    \subitem {Cone}, \hyperpage{36}
+    \subitem {Cylinder}, \hyperpage{46}
+    \subitem {Iprimitives}, \hyperpage{57}
+    \subitem {Plane}, \hyperpage{71}
+    \subitem {Scene}, \hyperpage{82}
+    \subitem {Sphere}, \hyperpage{88}
+  \item {Iprimitives}, \hyperpage{56}
+    \subitem {getColor}, \hyperpage{56}
+    \subitem {getNormal}, \hyperpage{57}
+    \subitem {intersect}, \hyperpage{57}
+    \subitem {normalize}, \hyperpage{58}
+
+  \indexspace
+
+  \item {length}
+    \subitem {Vector3D}, \hyperpage{97}
+  \item {lerp}
+    \subitem {Color}, \hyperpage{19}
+    \subitem {Vector3D}, \hyperpage{98}
+  \item {Light}, \hyperpage{58}
+    \subitem {addDirectionalLight}, \hyperpage{61}
+    \subitem {addPointLight}, \hyperpage{61}
+    \subitem {getAmbient}, \hyperpage{61}
+    \subitem {getColor}, \hyperpage{61}
+    \subitem {getDiffuse}, \hyperpage{62}
+    \subitem {getDirectionalLights}, \hyperpage{62}
+    \subitem {getPointLights}, \hyperpage{62}
+    \subitem {getType}, \hyperpage{62}
+    \subitem {Light}, \hyperpage{60}
+    \subitem {operator!=}, \hyperpage{63}
+    \subitem {operator+}, \hyperpage{63}
+    \subitem {operator+=}, \hyperpage{63}
+    \subitem {operator-\/}, \hyperpage{64}
+    \subitem {operator-\/=}, \hyperpage{64}
+    \subitem {operator=}, \hyperpage{65}
+    \subitem {operator==}, \hyperpage{65}
+    \subitem {setAmbient}, \hyperpage{66}
+    \subitem {setDiffuse}, \hyperpage{66}
+    \subitem {setDirectionalLights}, \hyperpage{66}
+    \subitem {setPointLights}, \hyperpage{66}
+
+  \indexspace
+
+  \item {magnitude}
+    \subitem {Vector3D}, \hyperpage{98}
+  \item {max}
+    \subitem {Vector3D}, \hyperpage{98}
+  \item {min}
+    \subitem {Vector3D}, \hyperpage{99}
+  \item {mix}
+    \subitem {Color}, \hyperpage{20}
+
+  \indexspace
+
+  \item {normalize}
+    \subitem {Cone}, \hyperpage{37}
+    \subitem {Cylinder}, \hyperpage{47}
+    \subitem {Iprimitives}, \hyperpage{58}
+    \subitem {Plane}, \hyperpage{71}
+    \subitem {Sphere}, \hyperpage{89}
+    \subitem {Vector3D}, \hyperpage{99}
+
+  \indexspace
+
+  \item {operator!=}
+    \subitem {Color}, \hyperpage{20}
+    \subitem {Light}, \hyperpage{63}
+    \subitem {Vector3D}, \hyperpage{99}
+  \item {operator$<$}
+    \subitem {Vector3D}, \hyperpage{106}
+  \item {operator$<$$<$}
+    \subitem {Color}, \hyperpage{28}
+    \subitem {Vector3D}, \hyperpage{107}
+  \item {operator$<$=}
+    \subitem {Vector3D}, \hyperpage{107}
+  \item {operator$>$}
+    \subitem {Vector3D}, \hyperpage{109}
+  \item {operator$>$=}
+    \subitem {Vector3D}, \hyperpage{111}
+  \item {operator$\ast$}
+    \subitem {Color}, \hyperpage{20, 21}
+    \subitem {Vector3D}, \hyperpage{100}
+  \item {operator$\ast$=}
+    \subitem {Color}, \hyperpage{21, 22}
+    \subitem {Vector3D}, \hyperpage{100}, \hyperpage{102}
+  \item {operator+}
+    \subitem {Color}, \hyperpage{22}
+    \subitem {Light}, \hyperpage{63}
+    \subitem {Vector3D}, \hyperpage{102}
+  \item {operator+=}
+    \subitem {Color}, \hyperpage{23}
+    \subitem {Light}, \hyperpage{63}
+    \subitem {Vector3D}, \hyperpage{103}
+  \item {operator-\/}
+    \subitem {Color}, \hyperpage{23, 24}
+    \subitem {Light}, \hyperpage{64}
+    \subitem {Vector3D}, \hyperpage{103, 104}
+  \item {operator-\/=}
+    \subitem {Color}, \hyperpage{24}
+    \subitem {Light}, \hyperpage{64}
+    \subitem {Vector3D}, \hyperpage{104, 105}
+  \item {operator/}
+    \subitem {Color}, \hyperpage{26}
+    \subitem {Vector3D}, \hyperpage{105}
+  \item {operator/=}
+    \subitem {Color}, \hyperpage{26}, \hyperpage{28}
+    \subitem {Vector3D}, \hyperpage{106}
+  \item {operator=}
+    \subitem {Camera}, \hyperpage{12}
+    \subitem {Color}, \hyperpage{28}, \hyperpage{30}
+    \subitem {Cone}, \hyperpage{37, 38}
+    \subitem {Cylinder}, \hyperpage{47, 48}
+    \subitem {ImagePPM}, \hyperpage{53}
+    \subitem {Light}, \hyperpage{65}
+    \subitem {Plane}, \hyperpage{72}
+    \subitem {Ray}, \hyperpage{77}
+    \subitem {Scene}, \hyperpage{83}
+    \subitem {Sphere}, \hyperpage{89, 90}
+    \subitem {Vector3D}, \hyperpage{107}, \hyperpage{109}
+  \item {operator==}
+    \subitem {Color}, \hyperpage{30}
+    \subitem {Light}, \hyperpage{65}
+    \subitem {Vector3D}, \hyperpage{109}
+
+  \indexspace
+
+  \item {Plane}, \hyperpage{67}
+    \subitem {getAxis}, \hyperpage{69}
+    \subitem {getColor}, \hyperpage{69}
+    \subitem {getNormal}, \hyperpage{69}
+    \subitem {getPosition}, \hyperpage{71}
+    \subitem {intersect}, \hyperpage{71}
+    \subitem {normalize}, \hyperpage{71}
+    \subitem {operator=}, \hyperpage{72}
+    \subitem {Plane}, \hyperpage{68, 69}
+    \subitem {setAxis}, \hyperpage{72}
+    \subitem {setColor}, \hyperpage{73}
+    \subitem {setPosition}, \hyperpage{73}
+  \item {produit}
+    \subitem {Vector3D}, \hyperpage{111}
+  \item {putRendering}
+    \subitem {Scene}, \hyperpage{83}
+
+  \indexspace
+
+  \item {Ray}, \hyperpage{73}
+    \subitem {getDirection}, \hyperpage{76}
+    \subitem {getOrigin}, \hyperpage{76}
+    \subitem {operator=}, \hyperpage{77}
+    \subitem {Ray}, \hyperpage{74}, \hyperpage{76}
+    \subitem {setDirection}, \hyperpage{77}
+    \subitem {setOrigin}, \hyperpage{78}
+  \item {RaySetting}, \hyperpage{78}
+    \subitem {getType}, \hyperpage{79}
+  \item {reflect}
+    \subitem {Vector3D}, \hyperpage{111}
+  \item {render}
+    \subitem {Scene}, \hyperpage{84}
+  \item {rotateX}
+    \subitem {Vector3D}, \hyperpage{112}
+  \item {rotateY}
+    \subitem {Vector3D}, \hyperpage{112}
+  \item {rotateZ}
+    \subitem {Vector3D}, \hyperpage{112}
+
+  \indexspace
+
+  \item {Scene}, \hyperpage{79}
+    \subitem {addPrimitive}, \hyperpage{81}
+    \subitem {getCamera}, \hyperpage{81}
+    \subitem {getIprimitives}, \hyperpage{81}
+    \subitem {getLight}, \hyperpage{81}
+    \subitem {intersect}, \hyperpage{82}
+    \subitem {operator=}, \hyperpage{83}
+    \subitem {putRendering}, \hyperpage{83}
+    \subitem {render}, \hyperpage{84}
+    \subitem {Scene}, \hyperpage{80, 81}
+    \subitem {setCamera}, \hyperpage{84}
+    \subitem {setIprimitives}, \hyperpage{84}
+    \subitem {setLight}, \hyperpage{84}
+    \subitem {trace}, \hyperpage{85}
+  \item {setA}
+    \subitem {Color}, \hyperpage{30}
+  \item {setAmbient}
+    \subitem {Light}, \hyperpage{66}
+  \item {setAxis}
+    \subitem {Plane}, \hyperpage{72}
+  \item {setB}
+    \subitem {Color}, \hyperpage{32}
+  \item {setCamera}
+    \subitem {Scene}, \hyperpage{84}
+  \item {setCenter}
+    \subitem {Sphere}, \hyperpage{90}
+  \item {setColor}
+    \subitem {Cylinder}, \hyperpage{48}
+    \subitem {Plane}, \hyperpage{73}
+  \item {setDiffuse}
+    \subitem {Light}, \hyperpage{66}
+  \item {setDirection}
+    \subitem {Cone}, \hyperpage{38}
+    \subitem {Ray}, \hyperpage{77}
+  \item {setDirectionalLights}
+    \subitem {Light}, \hyperpage{66}
+  \item {setFov}
+    \subitem {Camera}, \hyperpage{12}
+  \item {setG}
+    \subitem {Color}, \hyperpage{32}
+  \item {setHeight}
+    \subitem {Cone}, \hyperpage{38}
+    \subitem {Cylinder}, \hyperpage{48}
+    \subitem {ImagePPM}, \hyperpage{54}
+  \item {setIprimitives}
+    \subitem {Scene}, \hyperpage{84}
+  \item {setLight}
+    \subitem {Scene}, \hyperpage{84}
+  \item {setOrigin}
+    \subitem {Ray}, \hyperpage{78}
+  \item {setPixel}
+    \subitem {Camera}, \hyperpage{13}
+    \subitem {ImagePPM}, \hyperpage{54}
+  \item {setPixels}
+    \subitem {Camera}, \hyperpage{13}
+    \subitem {ImagePPM}, \hyperpage{55}
+  \item {setPointLights}
+    \subitem {Light}, \hyperpage{66}
+  \item {setPosition}
+    \subitem {Camera}, \hyperpage{14}
+    \subitem {Cone}, \hyperpage{38}
+    \subitem {Cylinder}, \hyperpage{48}
+    \subitem {Plane}, \hyperpage{73}
+  \item {setR}
+    \subitem {Color}, \hyperpage{32}
+  \item {setRadius}
+    \subitem {Cone}, \hyperpage{39}
+    \subitem {Cylinder}, \hyperpage{49}
+    \subitem {Sphere}, \hyperpage{90}
+  \item {setResolution}
+    \subitem {Camera}, \hyperpage{14}
+  \item {setRotation}
+    \subitem {Camera}, \hyperpage{14}
+  \item {setSize}
+    \subitem {ImagePPM}, \hyperpage{55}
+  \item {setVector}
+    \subitem {Vector3D}, \hyperpage{113}
+  \item {setWidth}
+    \subitem {ImagePPM}, \hyperpage{55}
+  \item {setX}
+    \subitem {Vector3D}, \hyperpage{113}
+  \item {setY}
+    \subitem {Vector3D}, \hyperpage{113}
+  \item {setZ}
+    \subitem {Vector3D}, \hyperpage{113}
+  \item {somme}
+    \subitem {Vector3D}, \hyperpage{114}
+  \item {Sphere}, \hyperpage{85}
+    \subitem {getCenter}, \hyperpage{87}
+    \subitem {getColor}, \hyperpage{88}
+    \subitem {getNormal}, \hyperpage{88}
+    \subitem {getRadius}, \hyperpage{88}
+    \subitem {intersect}, \hyperpage{88}
+    \subitem {normalize}, \hyperpage{89}
+    \subitem {operator=}, \hyperpage{89, 90}
+    \subitem {setCenter}, \hyperpage{90}
+    \subitem {setRadius}, \hyperpage{90}
+    \subitem {Sphere}, \hyperpage{86, 87}
+  \item {squaredLength}
+    \subitem {Vector3D}, \hyperpage{114}
+  \item {substract}
+    \subitem {Vector3D}, \hyperpage{114}
+
+  \indexspace
+
+  \item {trace}
+    \subitem {Scene}, \hyperpage{85}
+  \item {translate}
+    \subitem {Vector3D}, \hyperpage{114}
+
+  \indexspace
+
+  \item {Vector3D}, \hyperpage{91}
+    \subitem {angle}, \hyperpage{94}
+    \subitem {clamp}, \hyperpage{95}
+    \subitem {cross}, \hyperpage{95}
+    \subitem {distance}, \hyperpage{96}
+    \subitem {division}, \hyperpage{96}
+    \subitem {dot}, \hyperpage{96}
+    \subitem {getVector}, \hyperpage{97}
+    \subitem {getX}, \hyperpage{97}
+    \subitem {getY}, \hyperpage{97}
+    \subitem {getZ}, \hyperpage{97}
+    \subitem {length}, \hyperpage{97}
+    \subitem {lerp}, \hyperpage{98}
+    \subitem {magnitude}, \hyperpage{98}
+    \subitem {max}, \hyperpage{98}
+    \subitem {min}, \hyperpage{99}
+    \subitem {normalize}, \hyperpage{99}
+    \subitem {operator!=}, \hyperpage{99}
+    \subitem {operator$<$}, \hyperpage{106}
+    \subitem {operator$<$$<$}, \hyperpage{107}
+    \subitem {operator$<$=}, \hyperpage{107}
+    \subitem {operator$>$}, \hyperpage{109}
+    \subitem {operator$>$=}, \hyperpage{111}
+    \subitem {operator$\ast$}, \hyperpage{100}
+    \subitem {operator$\ast$=}, \hyperpage{100}, \hyperpage{102}
+    \subitem {operator+}, \hyperpage{102}
+    \subitem {operator+=}, \hyperpage{103}
+    \subitem {operator-\/}, \hyperpage{103, 104}
+    \subitem {operator-\/=}, \hyperpage{104, 105}
+    \subitem {operator/}, \hyperpage{105}
+    \subitem {operator/=}, \hyperpage{106}
+    \subitem {operator=}, \hyperpage{107}, \hyperpage{109}
+    \subitem {operator==}, \hyperpage{109}
+    \subitem {produit}, \hyperpage{111}
+    \subitem {reflect}, \hyperpage{111}
+    \subitem {rotateX}, \hyperpage{112}
+    \subitem {rotateY}, \hyperpage{112}
+    \subitem {rotateZ}, \hyperpage{112}
+    \subitem {setVector}, \hyperpage{113}
+    \subitem {setX}, \hyperpage{113}
+    \subitem {setY}, \hyperpage{113}
+    \subitem {setZ}, \hyperpage{113}
+    \subitem {somme}, \hyperpage{114}
+    \subitem {squaredLength}, \hyperpage{114}
+    \subitem {substract}, \hyperpage{114}
+    \subitem {translate}, \hyperpage{114}
+    \subitem {Vector3D}, \hyperpage{93, 94}
+
+\end{theindex}

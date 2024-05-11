@@ -1,0 +1,342 @@
+\hypertarget{classScene}{}\doxysection{Scene Class Reference}
+\label{classScene}\index{Scene@{Scene}}
+
+
+\mbox{[}\mbox{\hyperlink{classScene}{Scene}}\mbox{]} class of the scene This class is used to define the scene (the camera, the lights and the primitives) and to define the methods that the scene must have (ex\+: add\+Primitive, render, ...)  
+
+
+
+
+{\ttfamily \#include $<$Scene.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classScene_a93ccc41b0a2f6c24e467d5d9de76ec0d}\label{classScene_a93ccc41b0a2f6c24e467d5d9de76ec0d}} 
+\mbox{\hyperlink{classScene_a93ccc41b0a2f6c24e467d5d9de76ec0d}{Scene}} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classScene}{Scene}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScene_aae30db27980fd0eab2b2dfac7530754b}{Scene}} (const \mbox{\hyperlink{classScene}{Scene}} \&scene)=default
+\begin{DoxyCompactList}\small\item\em Copy construct a new \mbox{\hyperlink{classScene}{Scene}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScene_a330bbad809bd06fd18d1ae41f6ba19d9}{Scene}} (\mbox{\hyperlink{classScene}{Scene}} \&scene)=default
+\begin{DoxyCompactList}\small\item\em Move construct a new \mbox{\hyperlink{classScene}{Scene}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScene_a631eef7493cafce5d74739a2cad12a58}\label{classScene_a631eef7493cafce5d74739a2cad12a58}} 
+\mbox{\hyperlink{classScene_a631eef7493cafce5d74739a2cad12a58}{$\sim$\+Scene}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classScene}{Scene}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScene}{Scene}} \& \mbox{\hyperlink{classScene_a72570adeb25ac5bbd95f3c919ba02888}{operator=}} (\mbox{\hyperlink{classScene}{Scene}} \&scene)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScene}{Scene}} \& \mbox{\hyperlink{classScene_ad3b85c147a1a37c6a364375a7bfc73f9}{operator=}} (const \mbox{\hyperlink{classScene}{Scene}} \&scene)=default
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCamera}{Camera}} \mbox{\hyperlink{classScene_a6d0a3d4d98ee8c259109cdc14e7c5408}{get\+Camera}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classCamera}{Camera}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight}{Light}} \mbox{\hyperlink{classScene_a6f0e4dde0f581ae79a14499d782e4ee3}{get\+Light}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classIprimitives}{Iprimitives}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classScene_acf3a2494594097f4ac2a0156c318a413}{get\+Iprimitives}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classIprimitives}{Iprimitives}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScene_a2bf163f04fa9b3ee0ed489492c5849d1}{set\+Camera}} (\mbox{\hyperlink{classCamera}{Camera}} camera)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classCamera}{Camera}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScene_ad4603cbd48d6b3142456c0be229845cb}{set\+Light}} (\mbox{\hyperlink{classLight}{Light}} light)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScene_a5853392de21f6f011ca6befdc820dcae}{set\+Iprimitives}} (std\+::vector$<$ \mbox{\hyperlink{classIprimitives}{Iprimitives}} $\ast$ $>$ $\ast$iprimitives)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classIprimitives}{Iprimitives}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScene_abdddca5bfda4dfabfff641281ee5e16a}{add\+Primitive}} (\mbox{\hyperlink{classIprimitives}{Iprimitives}} $\ast$primitive)
+\begin{DoxyCompactList}\small\item\em Add new primitive to the scene. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScene_a5208a7652d78e45c68b3663070acff72}{intersect}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray, \mbox{\hyperlink{classVector3D}{Vector3D}} \&intersection) const
+\begin{DoxyCompactList}\small\item\em Method for all primitives in the scene. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classScene_a33cf660d0bec2cadf64fd34c1c136aac}{intersect}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray, \mbox{\hyperlink{classVector3D}{Vector3D}} \&intersection, \mbox{\hyperlink{classVector3D}{Vector3D}} \&noraml, \mbox{\hyperlink{classColor}{Color}} \&color) const
+\begin{DoxyCompactList}\small\item\em Method for all primitives in the scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classColor}{Color}} \mbox{\hyperlink{classScene_a34d3b7a1361d157c8cbbf983111bae86}{trace}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray, int depth) const
+\begin{DoxyCompactList}\small\item\em trace method for all primitives in the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScene_aa584ccb0c476ac093f23db82091b8ec9}{render}} (\mbox{\hyperlink{classImagePPM}{Image\+PPM}} \&image) const
+\begin{DoxyCompactList}\small\item\em Render the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScene_a8fe707225dd4fd71ad3a3315d1ebe9c2}{put\+Rendering}} (int x, int y, int width, int height) const
+\begin{DoxyCompactList}\small\item\em Put the rendering of the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{classScene}{Scene}}\mbox{]} class of the scene This class is used to define the scene (the camera, the lights and the primitives) and to define the methods that the scene must have (ex\+: add\+Primitive, render, ...) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+camera} & the camera of the scene \\
+\hline
+{\em \+\_\+light} & the light of the scene \\
+\hline
+{\em \+\_\+iprimitives} & the primitives of the scene \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScene_aae30db27980fd0eab2b2dfac7530754b}\label{classScene_aae30db27980fd0eab2b2dfac7530754b}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classScene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy construct a new \mbox{\hyperlink{classScene}{Scene}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScene_a330bbad809bd06fd18d1ae41f6ba19d9}\label{classScene_a330bbad809bd06fd18d1ae41f6ba19d9}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classScene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move construct a new \mbox{\hyperlink{classScene}{Scene}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScene_abdddca5bfda4dfabfff641281ee5e16a}\label{classScene_abdddca5bfda4dfabfff641281ee5e16a}} 
+\index{Scene@{Scene}!addPrimitive@{addPrimitive}}
+\index{addPrimitive@{addPrimitive}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addPrimitive()}{addPrimitive()}}
+{\footnotesize\ttfamily void Scene\+::add\+Primitive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIprimitives}{Iprimitives}} $\ast$}]{primitive }\end{DoxyParamCaption})}
+
+
+
+Add new primitive to the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em primitive} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScene_a6d0a3d4d98ee8c259109cdc14e7c5408}\label{classScene_a6d0a3d4d98ee8c259109cdc14e7c5408}} 
+\index{Scene@{Scene}!getCamera@{getCamera}}
+\index{getCamera@{getCamera}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getCamera()}{getCamera()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCamera}{Camera}} Scene\+::get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{classCamera}{Camera}} object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classCamera}{Camera}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScene_acf3a2494594097f4ac2a0156c318a413}\label{classScene_acf3a2494594097f4ac2a0156c318a413}} 
+\index{Scene@{Scene}!getIprimitives@{getIprimitives}}
+\index{getIprimitives@{getIprimitives}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getIprimitives()}{getIprimitives()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classIprimitives}{Iprimitives}} $\ast$$>$$\ast$ Scene\+::get\+Iprimitives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{classIprimitives}{Iprimitives}} object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Iprimitives $\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScene_a6f0e4dde0f581ae79a14499d782e4ee3}\label{classScene_a6f0e4dde0f581ae79a14499d782e4ee3}} 
+\index{Scene@{Scene}!getLight@{getLight}}
+\index{getLight@{getLight}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getLight()}{getLight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLight}{Light}} Scene\+::get\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{classLight}{Light}} object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classLight}{Light}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScene_a5208a7652d78e45c68b3663070acff72}\label{classScene_a5208a7652d78e45c68b3663070acff72}} 
+\index{Scene@{Scene}!intersect@{intersect}}
+\index{intersect@{intersect}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Scene\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{intersection }\end{DoxyParamCaption}) const}
+
+
+
+Method for all primitives in the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & to intersect with the scene \\
+\hline
+{\em intersection} & point if there is one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true$\vert$false if there is an intersection or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScene_a33cf660d0bec2cadf64fd34c1c136aac}\label{classScene_a33cf660d0bec2cadf64fd34c1c136aac}} 
+\index{Scene@{Scene}!intersect@{intersect}}
+\index{intersect@{intersect}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Scene\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{intersection,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{noraml,  }\item[{\mbox{\hyperlink{classColor}{Color}} \&}]{color }\end{DoxyParamCaption}) const}
+
+
+
+Method for all primitives in the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & to intersect with the scene \\
+\hline
+{\em intersection} & point if there is one \\
+\hline
+{\em normal} & of the primitive at the intersection point if there is one \\
+\hline
+{\em color} & of the primitive at the intersection point if there is one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true$\vert$false if there is an intersection or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScene_ad3b85c147a1a37c6a364375a7bfc73f9}\label{classScene_ad3b85c147a1a37c6a364375a7bfc73f9}} 
+\index{Scene@{Scene}!operator=@{operator=}}
+\index{operator=@{operator=}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScene}{Scene}}\& Scene\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classScene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classScene}{Scene}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScene_a72570adeb25ac5bbd95f3c919ba02888}\label{classScene_a72570adeb25ac5bbd95f3c919ba02888}} 
+\index{Scene@{Scene}!operator=@{operator=}}
+\index{operator=@{operator=}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScene}{Scene}}\& Scene\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classScene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classScene}{Scene}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScene_a8fe707225dd4fd71ad3a3315d1ebe9c2}\label{classScene_a8fe707225dd4fd71ad3a3315d1ebe9c2}} 
+\index{Scene@{Scene}!putRendering@{putRendering}}
+\index{putRendering@{putRendering}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{putRendering()}{putRendering()}}
+{\footnotesize\ttfamily void Scene\+::put\+Rendering (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption}) const}
+
+
+
+Put the rendering of the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinate of the pixel \\
+\hline
+{\em y} & coordinate of the pixel \\
+\hline
+{\em width} & the pixel \\
+\hline
+{\em height} & of the pixel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScene_aa584ccb0c476ac093f23db82091b8ec9}\label{classScene_aa584ccb0c476ac093f23db82091b8ec9}} 
+\index{Scene@{Scene}!render@{render}}
+\index{render@{render}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Scene\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classImagePPM}{Image\+PPM}} \&}]{image }\end{DoxyParamCaption}) const}
+
+
+
+Render the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & to render (the image will be modified in this method) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScene_a2bf163f04fa9b3ee0ed489492c5849d1}\label{classScene_a2bf163f04fa9b3ee0ed489492c5849d1}} 
+\index{Scene@{Scene}!setCamera@{setCamera}}
+\index{setCamera@{setCamera}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{setCamera()}{setCamera()}}
+{\footnotesize\ttfamily void Scene\+::set\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCamera}{Camera}}}]{camera }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classCamera}{Camera}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScene_a5853392de21f6f011ca6befdc820dcae}\label{classScene_a5853392de21f6f011ca6befdc820dcae}} 
+\index{Scene@{Scene}!setIprimitives@{setIprimitives}}
+\index{setIprimitives@{setIprimitives}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{setIprimitives()}{setIprimitives()}}
+{\footnotesize\ttfamily void Scene\+::set\+Iprimitives (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classIprimitives}{Iprimitives}} $\ast$ $>$ $\ast$}]{iprimitives }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classIprimitives}{Iprimitives}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iprimitives} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScene_ad4603cbd48d6b3142456c0be229845cb}\label{classScene_ad4603cbd48d6b3142456c0be229845cb}} 
+\index{Scene@{Scene}!setLight@{setLight}}
+\index{setLight@{setLight}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{setLight()}{setLight()}}
+{\footnotesize\ttfamily void Scene\+::set\+Light (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLight}{Light}}}]{light }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classLight}{Light}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScene_a34d3b7a1361d157c8cbbf983111bae86}\label{classScene_a34d3b7a1361d157c8cbbf983111bae86}} 
+\index{Scene@{Scene}!trace@{trace}}
+\index{trace@{trace}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classColor}{Color}} Scene\+::trace (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray,  }\item[{int}]{depth }\end{DoxyParamCaption}) const}
+
+
+
+trace method for all primitives in the scene 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & to trace with the scene (from the camera) \\
+\hline
+{\em depth} & of the ray (for reflection) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classColor}{Color}} at this pixel (the color of the primitive) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/Scene.\+hpp\end{DoxyCompactItemize}

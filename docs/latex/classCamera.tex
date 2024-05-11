@@ -1,0 +1,433 @@
+\hypertarget{classCamera}{}\doxysection{Camera Class Reference}
+\label{classCamera}\index{Camera@{Camera}}
+
+
+\mbox{[}\mbox{\hyperlink{classCamera}{Camera}}\mbox{]} The camera is the point of view of the scene It contains the position, the rotation, the field of view and the resolution It also contains the pixels of the camera It inherits from \mbox{\hyperlink{classRaySetting}{Ray\+Setting}}  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+hpp$>$}
+
+Inheritance diagram for Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCamera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCamera_a01f94c3543f56ede7af49dc778f19331}\label{classCamera_a01f94c3543f56ede7af49dc778f19331}} 
+\mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}} ()
+\begin{DoxyCompactList}\small\item\em Default construct a new \mbox{\hyperlink{classCamera}{Camera}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCamera_a5823ffa9fec209afc85002882088a34a}{Camera}} (\mbox{\hyperlink{classVector3D}{Vector3D}} position, \mbox{\hyperlink{classVector3D}{Vector3D}} rotation, double fov, sf\+::\+Vector2i resolution)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCamera}{Camera}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCamera_a439c08f4bc30f939058ff101832ec6fc}{Camera}} (const \mbox{\hyperlink{classCamera}{Camera}} \&camera)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor of \mbox{\hyperlink{classCamera}{Camera}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCamera_a31d8b39687ce79ddb0a6c133313a30b4}{Camera}} (\mbox{\hyperlink{classCamera}{Camera}} \&camera)=default
+\begin{DoxyCompactList}\small\item\em Move constructor of \mbox{\hyperlink{classCamera}{Camera}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCamera_adcb96efefa7af58e3ee6534b15d4979b}\label{classCamera_adcb96efefa7af58e3ee6534b15d4979b}} 
+\mbox{\hyperlink{classCamera_adcb96efefa7af58e3ee6534b15d4979b}{$\sim$\+Camera}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classCamera}{Camera}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCamera}{Camera}} \& \mbox{\hyperlink{classCamera_aa13079bf3ead800573a32779a54a79ef}{operator=}} (\mbox{\hyperlink{classCamera}{Camera}} \&camera)=default
+\begin{DoxyCompactList}\small\item\em Operator = of \mbox{\hyperlink{classCamera}{Camera}} (copy the \mbox{\hyperlink{classCamera}{Camera}}) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCamera}{Camera}} \& \mbox{\hyperlink{classCamera_a56ccb5b79fae242cde82dd0ae30bafb1}{operator=}} (const \mbox{\hyperlink{classCamera}{Camera}} \&camera)=default
+\begin{DoxyCompactList}\small\item\em Move operator of \mbox{\hyperlink{classCamera}{Camera}} (move the \mbox{\hyperlink{classCamera}{Camera}}) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classCamera_affdfce324f2788065316171072d57135}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the position of the camera. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classCamera_a5fad45642fae0a0a7096c7a6bd77fa5b}{get\+Rotation}} () const
+\begin{DoxyCompactList}\small\item\em Get the rotation of the camera. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCamera_ac3f615fd674977d065592c1635fc40bc}{get\+Fov}} () const
+\begin{DoxyCompactList}\small\item\em Get the Fov of the camera (in degrees) \end{DoxyCompactList}\item 
+sf\+::\+Vector2i \mbox{\hyperlink{classCamera_af9750a692bccc68e61f94d297cfe9bef}{get\+Resolution}} () const
+\begin{DoxyCompactList}\small\item\em Get the Resolution of the camera. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classColor}{Color}} $>$ \mbox{\hyperlink{classCamera_aefb829b6954558eae2f20795e50de4db}{get\+Pixels}} () const
+\begin{DoxyCompactList}\small\item\em Get the Pixels of the camera (width $\ast$ height) (r, g, b) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classColor}{Color}} \mbox{\hyperlink{classCamera_aa322be5b0324a31ab9391b3f44b74d8c}{get\+Pixel}} (int x, int y) const
+\begin{DoxyCompactList}\small\item\em Get the Pixel of the camera. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classColor}{Color}} \mbox{\hyperlink{classCamera_a9db00b9e19601bc0ee8606583d9dbb5b}{get\+Pixel}} (int index) const
+\begin{DoxyCompactList}\small\item\em Get the Pixel of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a0dabe8aaadef183269eace823092b25a}{set\+Position}} (\mbox{\hyperlink{classVector3D}{Vector3D}} position)
+\begin{DoxyCompactList}\small\item\em Set the Position of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_ab2c4f5c0665a7c999c18b4d404645003}{set\+Rotation}} (\mbox{\hyperlink{classVector3D}{Vector3D}} rotation)
+\begin{DoxyCompactList}\small\item\em Set the Rotation of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_ac3e347f06a971d94781b68d6f495efe0}{set\+Fov}} (double fov)
+\begin{DoxyCompactList}\small\item\em Set the Fov of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a3c96954a52761f1915488fd15ed3e518}{set\+Resolution}} (sf\+::\+Vector2i resolution)
+\begin{DoxyCompactList}\small\item\em Set the Resolution of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a7f8b1363f740ace698462515cc617732}{set\+Pixels}} (std\+::vector$<$ \mbox{\hyperlink{classColor}{Color}} $>$ pixels)
+\begin{DoxyCompactList}\small\item\em Set the Pixels of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a2c032c50436cf81b19f7299611d3a739}{set\+Pixel}} (int x, int y, \mbox{\hyperlink{classColor}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Set the Pixel of the camera at the index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a396340c7c3279d54b2b9be4e28f097eb}{set\+Pixel}} (int index, \mbox{\hyperlink{classColor}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Set the Pixel of the camera at the index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRay}{Ray}} \mbox{\hyperlink{classCamera_a8dd976f95a684d2c61aed0553425d151}{get\+Ray}} (float x, float y) const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classRay}{Ray}} from the camera to the pixel (x, y) on the screen. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCamera_ad0d8df2c0a57fc7afcb5e639c65388f3}{get\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Get the Type of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{classCamera}{Camera}}\mbox{]} The camera is the point of view of the scene It contains the position, the rotation, the field of view and the resolution It also contains the pixels of the camera It inherits from \mbox{\hyperlink{classRaySetting}{Ray\+Setting}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & position of the camera (x, y, z) \\
+\hline
+{\em \+\_\+rotation} & rotation of the camera (in degrees\+: x, y, z) \\
+\hline
+{\em \+\_\+fov} & field of view of the camera (in degrees) \\
+\hline
+{\em \+\_\+resolution} & resolution of the camera (width, height) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCamera_a5823ffa9fec209afc85002882088a34a}\label{classCamera_a5823ffa9fec209afc85002882088a34a}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{position,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{rotation,  }\item[{double}]{fov,  }\item[{sf\+::\+Vector2i}]{resolution }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCamera}{Camera}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & position of the camera (x, y, z) \\
+\hline
+{\em rotation} & rotation of the camera (in degrees\+: x, y, z) \\
+\hline
+{\em fov} & field of view of the camera (in degrees) \\
+\hline
+{\em resolution} & resolution of the camera (width, height) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a439c08f4bc30f939058ff101832ec6fc}\label{classCamera_a439c08f4bc30f939058ff101832ec6fc}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCamera}{Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy constructor of \mbox{\hyperlink{classCamera}{Camera}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classCamera}{Camera}}} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a31d8b39687ce79ddb0a6c133313a30b4}\label{classCamera_a31d8b39687ce79ddb0a6c133313a30b4}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCamera}{Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move constructor of \mbox{\hyperlink{classCamera}{Camera}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classCamera}{Camera}}} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCamera_ac3f615fd674977d065592c1635fc40bc}\label{classCamera_ac3f615fd674977d065592c1635fc40bc}} 
+\index{Camera@{Camera}!getFov@{getFov}}
+\index{getFov@{getFov}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getFov()}{getFov()}}
+{\footnotesize\ttfamily double Camera\+::get\+Fov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Fov of the camera (in degrees) 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a9db00b9e19601bc0ee8606583d9dbb5b}\label{classCamera_a9db00b9e19601bc0ee8606583d9dbb5b}} 
+\index{Camera@{Camera}!getPixel@{getPixel}}
+\index{getPixel@{getPixel}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getPixel()}{getPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classColor}{Color}} Camera\+::get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Get the Pixel of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & of the pixel on the screen (width $\ast$ y + x) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classColor}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_aa322be5b0324a31ab9391b3f44b74d8c}\label{classCamera_aa322be5b0324a31ab9391b3f44b74d8c}} 
+\index{Camera@{Camera}!getPixel@{getPixel}}
+\index{getPixel@{getPixel}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getPixel()}{getPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classColor}{Color}} Camera\+::get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+
+
+
+Get the Pixel of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinate of the pixel on the screen (width) \\
+\hline
+{\em y} & coordinate of the pixel on the screen (height) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classColor}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_aefb829b6954558eae2f20795e50de4db}\label{classCamera_aefb829b6954558eae2f20795e50de4db}} 
+\index{Camera@{Camera}!getPixels@{getPixels}}
+\index{getPixels@{getPixels}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getPixels()}{getPixels()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classColor}{Color}}$>$ Camera\+::get\+Pixels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Pixels of the camera (width $\ast$ height) (r, g, b) 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Color$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_affdfce324f2788065316171072d57135}\label{classCamera_affdfce324f2788065316171072d57135}} 
+\index{Camera@{Camera}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Camera\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the position of the camera. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3D}{Vector3D}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a8dd976f95a684d2c61aed0553425d151}\label{classCamera_a8dd976f95a684d2c61aed0553425d151}} 
+\index{Camera@{Camera}!getRay@{getRay}}
+\index{getRay@{getRay}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getRay()}{getRay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRay}{Ray}} Camera\+::get\+Ray (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{classRay}{Ray}} from the camera to the pixel (x, y) on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinate of the pixel on the screen (width) \\
+\hline
+{\em y} & coordinate of the pixel on the screen (height) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classRay}{Ray}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_af9750a692bccc68e61f94d297cfe9bef}\label{classCamera_af9750a692bccc68e61f94d297cfe9bef}} 
+\index{Camera@{Camera}!getResolution@{getResolution}}
+\index{getResolution@{getResolution}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getResolution()}{getResolution()}}
+{\footnotesize\ttfamily sf\+::\+Vector2i Camera\+::get\+Resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Resolution of the camera. 
+
+\begin{DoxyReturn}{Returns}
+sf\+::\+Vector2i (width = x, height = y) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a5fad45642fae0a0a7096c7a6bd77fa5b}\label{classCamera_a5fad45642fae0a0a7096c7a6bd77fa5b}} 
+\index{Camera@{Camera}!getRotation@{getRotation}}
+\index{getRotation@{getRotation}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Camera\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the rotation of the camera. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3D}{Vector3D}} (in degrees) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_ad0d8df2c0a57fc7afcb5e639c65388f3}\label{classCamera_ad0d8df2c0a57fc7afcb5e639c65388f3}} 
+\index{Camera@{Camera}!getType@{getType}}
+\index{getType@{getType}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Camera\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Type of the object. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Camera\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRaySetting_aa8aa2a871e8d5520a5d964c841114ebf}{Ray\+Setting}}.
+
+\mbox{\Hypertarget{classCamera_aa13079bf3ead800573a32779a54a79ef}\label{classCamera_aa13079bf3ead800573a32779a54a79ef}} 
+\index{Camera@{Camera}!operator=@{operator=}}
+\index{operator=@{operator=}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCamera}{Camera}}\& Camera\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCamera}{Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Operator = of \mbox{\hyperlink{classCamera}{Camera}} (copy the \mbox{\hyperlink{classCamera}{Camera}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classCamera}{Camera}}} & The \mbox{\hyperlink{classCamera}{Camera}} to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classCamera}{Camera}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a56ccb5b79fae242cde82dd0ae30bafb1}\label{classCamera_a56ccb5b79fae242cde82dd0ae30bafb1}} 
+\index{Camera@{Camera}!operator=@{operator=}}
+\index{operator=@{operator=}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCamera}{Camera}}\& Camera\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCamera}{Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move operator of \mbox{\hyperlink{classCamera}{Camera}} (move the \mbox{\hyperlink{classCamera}{Camera}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classCamera}{Camera}}} & The \mbox{\hyperlink{classCamera}{Camera}} to move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classCamera}{Camera}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_ac3e347f06a971d94781b68d6f495efe0}\label{classCamera_ac3e347f06a971d94781b68d6f495efe0}} 
+\index{Camera@{Camera}!setFov@{setFov}}
+\index{setFov@{setFov}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setFov()}{setFov()}}
+{\footnotesize\ttfamily void Camera\+::set\+Fov (\begin{DoxyParamCaption}\item[{double}]{fov }\end{DoxyParamCaption})}
+
+
+
+Set the Fov of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fov} & (in degrees) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a396340c7c3279d54b2b9be4e28f097eb}\label{classCamera_a396340c7c3279d54b2b9be4e28f097eb}} 
+\index{Camera@{Camera}!setPixel@{setPixel}}
+\index{setPixel@{setPixel}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setPixel()}{setPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Camera\+::set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{classColor}{Color}}}]{color }\end{DoxyParamCaption})}
+
+
+
+Set the Pixel of the camera at the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & of the pixel in the vector \\
+\hline
+{\em color} & of the pixel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a2c032c50436cf81b19f7299611d3a739}\label{classCamera_a2c032c50436cf81b19f7299611d3a739}} 
+\index{Camera@{Camera}!setPixel@{setPixel}}
+\index{setPixel@{setPixel}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setPixel()}{setPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Camera\+::set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{classColor}{Color}}}]{color }\end{DoxyParamCaption})}
+
+
+
+Set the Pixel of the camera at the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & (wigth) \\
+\hline
+{\em y} & (height) \\
+\hline
+{\em color} & of the pixel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a7f8b1363f740ace698462515cc617732}\label{classCamera_a7f8b1363f740ace698462515cc617732}} 
+\index{Camera@{Camera}!setPixels@{setPixels}}
+\index{setPixels@{setPixels}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setPixels()}{setPixels()}}
+{\footnotesize\ttfamily void Camera\+::set\+Pixels (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classColor}{Color}} $>$}]{pixels }\end{DoxyParamCaption})}
+
+
+
+Set the Pixels of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixels} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a0dabe8aaadef183269eace823092b25a}\label{classCamera_a0dabe8aaadef183269eace823092b25a}} 
+\index{Camera@{Camera}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Camera\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Set the Position of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a3c96954a52761f1915488fd15ed3e518}\label{classCamera_a3c96954a52761f1915488fd15ed3e518}} 
+\index{Camera@{Camera}!setResolution@{setResolution}}
+\index{setResolution@{setResolution}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setResolution()}{setResolution()}}
+{\footnotesize\ttfamily void Camera\+::set\+Resolution (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2i}]{resolution }\end{DoxyParamCaption})}
+
+
+
+Set the Resolution of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resolution} & (width, height) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_ab2c4f5c0665a7c999c18b4d404645003}\label{classCamera_ab2c4f5c0665a7c999c18b4d404645003}} 
+\index{Camera@{Camera}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
+{\footnotesize\ttfamily void Camera\+::set\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Set the Rotation of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/Camera.\+hpp\end{DoxyCompactItemize}

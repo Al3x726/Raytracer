@@ -1,0 +1,200 @@
+\hypertarget{classRay}{}\doxysection{Ray Class Reference}
+\label{classRay}\index{Ray@{Ray}}
+
+
+\mbox{[}\mbox{\hyperlink{classRay}{Ray}}\mbox{]} Class of \mbox{\hyperlink{classRay}{Ray}} (used to define a ray) A ray is defined by an origin and a direction (ex\+: (0, 0, 0) and (1, 0, 0)) The ray is used to check if there is an intersection between the ray and the scene (ex\+: if there is an intersection between the ray and a sphere) The ray is also used to check if there is an intersection between the ray and the light (ex\+: if there is an intersection between the ray and the light, the point is in the shadow) The ray is also used to check if there is an intersection between the ray and the camera (ex\+: if there is an intersection between the ray and the camera, the point is visible) The ray is also used to check if there is an intersection between the ray and all the objects in the scene (ex\+: if there is an intersection between the ray and a sphere, the point is visible)  
+
+
+
+
+{\ttfamily \#include $<$Ray.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRay_a2e3d2c29f2df4ab3da10da79d4acb852}\label{classRay_a2e3d2c29f2df4ab3da10da79d4acb852}} 
+\mbox{\hyperlink{classRay_a2e3d2c29f2df4ab3da10da79d4acb852}{Ray}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of \mbox{\hyperlink{classRay}{Ray}} (create a ray with origin (0, 0, 0) and direction (0, 0, 0) (null vector)) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRay_afc3d7f28d585c63c54dc765d75885501}{Ray}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&origin, const \mbox{\hyperlink{classVector3D}{Vector3D}} \&direction)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classRay}{Ray}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRay_a2f4b3422c330f8ff514882e9d28b89ed}{Ray}} (const \mbox{\hyperlink{classRay}{Ray}} \&other)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor of \mbox{\hyperlink{classRay}{Ray}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRay_ad3a756d298baed6d9d86569e41b97500}{Ray}} (\mbox{\hyperlink{classRay}{Ray}} \&\&other)
+\begin{DoxyCompactList}\small\item\em Move constructor of \mbox{\hyperlink{classRay}{Ray}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRay_a486728e645dcfc3c48b424ee9d4351aa}\label{classRay_a486728e645dcfc3c48b424ee9d4351aa}} 
+\mbox{\hyperlink{classRay_a486728e645dcfc3c48b424ee9d4351aa}{$\sim$\+Ray}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classRay}{Ray}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRay}{Ray}} \& \mbox{\hyperlink{classRay_a154b2e18f6ca8828463ad985b30d7232}{operator=}} (const \mbox{\hyperlink{classRay}{Ray}} \&other)=default
+\begin{DoxyCompactList}\small\item\em Move operator of \mbox{\hyperlink{classRay}{Ray}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRay}{Ray}} \& \mbox{\hyperlink{classRay_a0b3bde34191339a1c864b65b897420e2}{operator=}} (\mbox{\hyperlink{classRay}{Ray}} \&\&other)
+\begin{DoxyCompactList}\small\item\em Move operator of \mbox{\hyperlink{classRay}{Ray}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classVector3D}{Vector3D}} \& \mbox{\hyperlink{classRay_a29b5f2f69d968c1a1aa98e8d09419710}{get\+Origin}} () const
+\begin{DoxyCompactList}\small\item\em Get the Origin value. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classVector3D}{Vector3D}} \& \mbox{\hyperlink{classRay_adb1279b7698c867cc2adb8961c72bb64}{get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em Get the Direction value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRay_a007216358edf166624e4c267639b2c15}{set\+Origin}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&origin)
+\begin{DoxyCompactList}\small\item\em Set the Origin value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRay_a3834a7ff0dae2fa2a3f077c4cd847ae1}{set\+Direction}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&direction)
+\begin{DoxyCompactList}\small\item\em Set the Direction value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{classRay}{Ray}}\mbox{]} Class of \mbox{\hyperlink{classRay}{Ray}} (used to define a ray) A ray is defined by an origin and a direction (ex\+: (0, 0, 0) and (1, 0, 0)) The ray is used to check if there is an intersection between the ray and the scene (ex\+: if there is an intersection between the ray and a sphere) The ray is also used to check if there is an intersection between the ray and the light (ex\+: if there is an intersection between the ray and the light, the point is in the shadow) The ray is also used to check if there is an intersection between the ray and the camera (ex\+: if there is an intersection between the ray and the camera, the point is visible) The ray is also used to check if there is an intersection between the ray and all the objects in the scene (ex\+: if there is an intersection between the ray and a sphere, the point is visible) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+origin} & the origin of the ray (ex\+: (0, 0, 0)) (\mbox{\hyperlink{classVector3D}{Vector3D}}) \\
+\hline
+{\em \+\_\+direction} & the direction of the ray (ex\+: (1, 0, 0)) (\mbox{\hyperlink{classVector3D}{Vector3D}}) (must be normalized) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRay_afc3d7f28d585c63c54dc765d75885501}\label{classRay_afc3d7f28d585c63c54dc765d75885501}} 
+\index{Ray@{Ray}!Ray@{Ray}}
+\index{Ray@{Ray}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{Ray()}{Ray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Ray\+::\+Ray (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{origin,  }\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{direction }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classRay}{Ray}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & of the ray \\
+\hline
+{\em direction} & of the ray \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRay_a2f4b3422c330f8ff514882e9d28b89ed}\label{classRay_a2f4b3422c330f8ff514882e9d28b89ed}} 
+\index{Ray@{Ray}!Ray@{Ray}}
+\index{Ray@{Ray}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{Ray()}{Ray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Ray\+::\+Ray (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy constructor of \mbox{\hyperlink{classRay}{Ray}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRay_ad3a756d298baed6d9d86569e41b97500}\label{classRay_ad3a756d298baed6d9d86569e41b97500}} 
+\index{Ray@{Ray}!Ray@{Ray}}
+\index{Ray@{Ray}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{Ray()}{Ray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Ray\+::\+Ray (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRay}{Ray}} \&\&}]{other }\end{DoxyParamCaption})}
+
+
+
+Move constructor of \mbox{\hyperlink{classRay}{Ray}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRay_adb1279b7698c867cc2adb8961c72bb64}\label{classRay_adb1279b7698c867cc2adb8961c72bb64}} 
+\index{Ray@{Ray}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVector3D}{Vector3D}}\& Ray\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Direction value. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classVector3D}{Vector3D}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRay_a29b5f2f69d968c1a1aa98e8d09419710}\label{classRay_a29b5f2f69d968c1a1aa98e8d09419710}} 
+\index{Ray@{Ray}!getOrigin@{getOrigin}}
+\index{getOrigin@{getOrigin}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{getOrigin()}{getOrigin()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVector3D}{Vector3D}}\& Ray\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Origin value. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classVector3D}{Vector3D}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRay_a154b2e18f6ca8828463ad985b30d7232}\label{classRay_a154b2e18f6ca8828463ad985b30d7232}} 
+\index{Ray@{Ray}!operator=@{operator=}}
+\index{operator=@{operator=}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRay}{Ray}}\& Ray\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move operator of \mbox{\hyperlink{classRay}{Ray}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classRay}{Ray}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRay_a0b3bde34191339a1c864b65b897420e2}\label{classRay_a0b3bde34191339a1c864b65b897420e2}} 
+\index{Ray@{Ray}!operator=@{operator=}}
+\index{operator=@{operator=}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRay}{Ray}}\& Ray\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRay}{Ray}} \&\&}]{other }\end{DoxyParamCaption})}
+
+
+
+Move operator of \mbox{\hyperlink{classRay}{Ray}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classRay}{Ray}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRay_a3834a7ff0dae2fa2a3f077c4cd847ae1}\label{classRay_a3834a7ff0dae2fa2a3f077c4cd847ae1}} 
+\index{Ray@{Ray}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void Ray\+::set\+Direction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{direction }\end{DoxyParamCaption})}
+
+
+
+Set the Direction value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRay_a007216358edf166624e4c267639b2c15}\label{classRay_a007216358edf166624e4c267639b2c15}} 
+\index{Ray@{Ray}!setOrigin@{setOrigin}}
+\index{setOrigin@{setOrigin}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}}
+{\footnotesize\ttfamily void Ray\+::set\+Origin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{origin }\end{DoxyParamCaption})}
+
+
+
+Set the Origin value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/Ray.\+hpp\end{DoxyCompactItemize}

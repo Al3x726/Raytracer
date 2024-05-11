@@ -1,0 +1,53 @@
+\hypertarget{classRaySetting}{}\doxysection{Ray\+Setting Class Reference}
+\label{classRaySetting}\index{RaySetting@{RaySetting}}
+
+
+\mbox{[}\mbox{\hyperlink{classRaySetting}{Ray\+Setting}}\mbox{]} class it\textquotesingle{}s abstract class of the ray setting This class is used to define \mbox{\hyperlink{classCamera}{Camera}} and \mbox{\hyperlink{classLight}{Light}}  
+
+
+
+
+{\ttfamily \#include $<$Ray\+Setting.\+hpp$>$}
+
+Inheritance diagram for Ray\+Setting\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRaySetting}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRaySetting_a9a991090c865f50a073b8e814382247d}\label{classRaySetting_a9a991090c865f50a073b8e814382247d}} 
+virtual \mbox{\hyperlink{classRaySetting_a9a991090c865f50a073b8e814382247d}{$\sim$\+Ray\+Setting}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classRaySetting}{Ray\+Setting}} object (it\textquotesingle{}s virtual because it\textquotesingle{}s abstract class) \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classRaySetting_aa8aa2a871e8d5520a5d964c841114ebf}{get\+Type}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{classRaySetting}{Ray\+Setting}}\mbox{]} class it\textquotesingle{}s abstract class of the ray setting This class is used to define \mbox{\hyperlink{classCamera}{Camera}} and \mbox{\hyperlink{classLight}{Light}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRaySetting_aa8aa2a871e8d5520a5d964c841114ebf}\label{classRaySetting_aa8aa2a871e8d5520a5d964c841114ebf}} 
+\index{RaySetting@{RaySetting}!getType@{getType}}
+\index{getType@{getType}!RaySetting@{RaySetting}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual std\+::string Ray\+Setting\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classLight_a35309eb64817441be29d1c8f61628c04}{Light}}, and \mbox{\hyperlink{classCamera_ad0d8df2c0a57fc7afcb5e639c65388f3}{Camera}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/Ray\+Setting.\+hpp\end{DoxyCompactItemize}

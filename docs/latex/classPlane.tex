@@ -1,0 +1,315 @@
+\hypertarget{classPlane}{}\doxysection{Plane Class Reference}
+\label{classPlane}\index{Plane@{Plane}}
+
+
+\mbox{[}\mbox{\hyperlink{classPlane}{Plane}}\mbox{]} class of the plane primitive (inherits from \mbox{\hyperlink{classIprimitives}{Iprimitives}}) This class is used to define the plane primitive and to define the methods that the plane must have (ex\+: intersect, ...)  
+
+
+
+
+{\ttfamily \#include $<$Plane.\+hpp$>$}
+
+Inheritance diagram for Plane\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPlane}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlane_aeb6662046addaee6b8af9211fe06a943}\label{classPlane_aeb6662046addaee6b8af9211fe06a943}} 
+\mbox{\hyperlink{classPlane_aeb6662046addaee6b8af9211fe06a943}{Plane}} ()=default
+\begin{DoxyCompactList}\small\item\em Default construct a new \mbox{\hyperlink{classPlane}{Plane}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlane_a2a57b7fc4ea79aca2f011dee499dea62}{Plane}} (const int \&axis, const double \&position, const \mbox{\hyperlink{classColor}{Color}} \&color)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPlane}{Plane}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlane_aebf3c91218a65f43baf808250a929b21}{Plane}} (const \mbox{\hyperlink{classPlane}{Plane}} \&other)=default
+\begin{DoxyCompactList}\small\item\em Copy construct a new \mbox{\hyperlink{classPlane}{Plane}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlane_a53e96d8df71d814975714ca4f2909669}{Plane}} (\mbox{\hyperlink{classPlane}{Plane}} \&\&other)=default
+\begin{DoxyCompactList}\small\item\em Move construct a new \mbox{\hyperlink{classPlane}{Plane}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlane_a73291f23635df69de8c9ab2124e720a1}\label{classPlane_a73291f23635df69de8c9ab2124e720a1}} 
+\mbox{\hyperlink{classPlane_a73291f23635df69de8c9ab2124e720a1}{$\sim$\+Plane}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classPlane}{Plane}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlane}{Plane}} \& \mbox{\hyperlink{classPlane_acf9ccf3a923ab512a3a998e7c177b0c0}{operator=}} (const \mbox{\hyperlink{classPlane}{Plane}} \&other)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlane}{Plane}} \& \mbox{\hyperlink{classPlane_a97fd00228a5154cc5275d83dda6a758c}{operator=}} (\mbox{\hyperlink{classPlane}{Plane}} \&\&other)=default
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlane_ada7d9f658ab6d440b0242e1b4963d954}{get\+Axis}} () const
+\begin{DoxyCompactList}\small\item\em Get the Axis value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classPlane_a6a5e52f8b2ebc6a158d00f9bcb3d4a0a}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the Position value. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classColor}{Color}} \& \mbox{\hyperlink{classPlane_acf382b31b018691a3b9b969f7867a95b}{get\+Color}} () const override
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classColor}{Color}} value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlane_a94d8b314f087d4c03611fae0c1c718c8}{set\+Axis}} (const int \&axis)
+\begin{DoxyCompactList}\small\item\em Set the Axis value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlane_ac162890302c6084e2c742631f348245b}{set\+Position}} (const double \&position)
+\begin{DoxyCompactList}\small\item\em Set the Position value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlane_a6a0e59ce7d5e910a3a2cec10f8dc93e9}{set\+Color}} (const \mbox{\hyperlink{classColor}{Color}} \&color)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classColor}{Color}} value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPlane_a7fae7379c9f3ce3c6c2e558ea209d069}{intersect}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray, float \&t) const override
+\begin{DoxyCompactList}\small\item\em method to check if a ray intersect with the plane \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classPlane_ae4ec611cc3f6b9001e8ac09762845671}{normalize}} () const override
+\begin{DoxyCompactList}\small\item\em method to get the normal of the plane \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classPlane_a64a13c10c97a5cde990fadd41b0148ae}{get\+Normal}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&point) const override
+\begin{DoxyCompactList}\small\item\em Get the Normal object at a given point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{classPlane}{Plane}}\mbox{]} class of the plane primitive (inherits from \mbox{\hyperlink{classIprimitives}{Iprimitives}}) This class is used to define the plane primitive and to define the methods that the plane must have (ex\+: intersect, ...) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+axis} & the axis of the plane (0 = x, 1 = y, 2 = z) \\
+\hline
+{\em \+\_\+position} & the position of the plane on the axis (double) \\
+\hline
+{\em \+\_\+color} & the color of the plane (\mbox{\hyperlink{classColor}{Color}}) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlane_a2a57b7fc4ea79aca2f011dee499dea62}\label{classPlane_a2a57b7fc4ea79aca2f011dee499dea62}} 
+\index{Plane@{Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{const int \&}]{axis,  }\item[{const double \&}]{position,  }\item[{const \mbox{\hyperlink{classColor}{Color}} \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPlane}{Plane}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & of the plane (0 = x, 1 = y, 2 = z) \\
+\hline
+{\em position} & of the plane on the axis \\
+\hline
+{\em color} & of the plane \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlane_aebf3c91218a65f43baf808250a929b21}\label{classPlane_aebf3c91218a65f43baf808250a929b21}} 
+\index{Plane@{Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlane}{Plane}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy construct a new \mbox{\hyperlink{classPlane}{Plane}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlane_a53e96d8df71d814975714ca4f2909669}\label{classPlane_a53e96d8df71d814975714ca4f2909669}} 
+\index{Plane@{Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlane}{Plane}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move construct a new \mbox{\hyperlink{classPlane}{Plane}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlane_ada7d9f658ab6d440b0242e1b4963d954}\label{classPlane_ada7d9f658ab6d440b0242e1b4963d954}} 
+\index{Plane@{Plane}!getAxis@{getAxis}}
+\index{getAxis@{getAxis}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getAxis()}{getAxis()}}
+{\footnotesize\ttfamily int Plane\+::get\+Axis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Axis value. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlane_acf382b31b018691a3b9b969f7867a95b}\label{classPlane_acf382b31b018691a3b9b969f7867a95b}} 
+\index{Plane@{Plane}!getColor@{getColor}}
+\index{getColor@{getColor}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classColor}{Color}}\& Plane\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{classColor}{Color}} value. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classColor}{Color}}\& 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIprimitives_a4d10894fa680a116de438019322640b4}{Iprimitives}}.
+
+\mbox{\Hypertarget{classPlane_a64a13c10c97a5cde990fadd41b0148ae}\label{classPlane_a64a13c10c97a5cde990fadd41b0148ae}} 
+\index{Plane@{Plane}!getNormal@{getNormal}}
+\index{getNormal@{getNormal}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getNormal()}{getNormal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Plane\+::get\+Normal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Normal object at a given point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & to get the normal from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3D}{Vector3D}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIprimitives_ab0963de1f71a9fe8e0f0bf2d8876990d}{Iprimitives}}.
+
+\mbox{\Hypertarget{classPlane_a6a5e52f8b2ebc6a158d00f9bcb3d4a0a}\label{classPlane_a6a5e52f8b2ebc6a158d00f9bcb3d4a0a}} 
+\index{Plane@{Plane}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily double Plane\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Position value. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlane_a7fae7379c9f3ce3c6c2e558ea209d069}\label{classPlane_a7fae7379c9f3ce3c6c2e558ea209d069}} 
+\index{Plane@{Plane}!intersect@{intersect}}
+\index{intersect@{intersect}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily bool Plane\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray,  }\item[{float \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+method to check if a ray intersect with the plane 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & to hnow if it intersect with the plane \\
+\hline
+{\em t} & the intersection point if there is one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true$\vert$false if there is an intersection or not 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIprimitives_a8ce48cc36d3c42d752db976c59bfe174}{Iprimitives}}.
+
+\mbox{\Hypertarget{classPlane_ae4ec611cc3f6b9001e8ac09762845671}\label{classPlane_ae4ec611cc3f6b9001e8ac09762845671}} 
+\index{Plane@{Plane}!normalize@{normalize}}
+\index{normalize@{normalize}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Plane\+::normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+method to get the normal of the plane 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3D}{Vector3D}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIprimitives_af8b22fb48e1bc8687f895d3ebc94408b}{Iprimitives}}.
+
+\mbox{\Hypertarget{classPlane_acf9ccf3a923ab512a3a998e7c177b0c0}\label{classPlane_acf9ccf3a923ab512a3a998e7c177b0c0}} 
+\index{Plane@{Plane}!operator=@{operator=}}
+\index{operator=@{operator=}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlane}{Plane}}\& Plane\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlane}{Plane}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classPlane}{Plane}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlane_a97fd00228a5154cc5275d83dda6a758c}\label{classPlane_a97fd00228a5154cc5275d83dda6a758c}} 
+\index{Plane@{Plane}!operator=@{operator=}}
+\index{operator=@{operator=}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlane}{Plane}}\& Plane\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlane}{Plane}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classPlane}{Plane}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlane_a94d8b314f087d4c03611fae0c1c718c8}\label{classPlane_a94d8b314f087d4c03611fae0c1c718c8}} 
+\index{Plane@{Plane}!setAxis@{setAxis}}
+\index{setAxis@{setAxis}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{setAxis()}{setAxis()}}
+{\footnotesize\ttfamily void Plane\+::set\+Axis (\begin{DoxyParamCaption}\item[{const int \&}]{axis }\end{DoxyParamCaption})}
+
+
+
+Set the Axis value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlane_a6a0e59ce7d5e910a3a2cec10f8dc93e9}\label{classPlane_a6a0e59ce7d5e910a3a2cec10f8dc93e9}} 
+\index{Plane@{Plane}!setColor@{setColor}}
+\index{setColor@{setColor}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Plane\+::set\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classColor}{Color}} \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classColor}{Color}} value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlane_ac162890302c6084e2c742631f348245b}\label{classPlane_ac162890302c6084e2c742631f348245b}} 
+\index{Plane@{Plane}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Plane\+::set\+Position (\begin{DoxyParamCaption}\item[{const double \&}]{position }\end{DoxyParamCaption})}
+
+
+
+Set the Position value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/Plane.\+hpp\end{DoxyCompactItemize}

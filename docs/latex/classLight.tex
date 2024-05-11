@@ -1,0 +1,478 @@
+\hypertarget{classLight}{}\doxysection{Light Class Reference}
+\label{classLight}\index{Light@{Light}}
+
+
+\mbox{[}\mbox{\hyperlink{classLight}{Light}}\mbox{]} class of the light (inherits from \mbox{\hyperlink{classRaySetting}{Ray\+Setting}}) This class is used to define the light and to define the methods that the light must have (ex\+: addition, subtraction, ...)  
+
+
+
+
+{\ttfamily \#include $<$Light.\+hpp$>$}
+
+Inheritance diagram for Light\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLight}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLight_af49ca6a5dd2fb43fb878a5ad5f0409fe}\label{classLight_af49ca6a5dd2fb43fb878a5ad5f0409fe}} 
+\mbox{\hyperlink{classLight_af49ca6a5dd2fb43fb878a5ad5f0409fe}{Light}} ()=default
+\begin{DoxyCompactList}\small\item\em Default construct a new \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight_afdd449e3b54baf5271a7d3123b3994c2}{Light}} (double ambient, double diffuse, const std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \&point\+Lights, const std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \&directional\+Lights)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight_abffae712643319d2a079f26ced54dd96}{Light}} (const \mbox{\hyperlink{classLight}{Light}} \&other)=default
+\begin{DoxyCompactList}\small\item\em Copy construct a new \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight_a9e360d2884a0a9acd8164100591fd3f5}{Light}} (\mbox{\hyperlink{classLight}{Light}} \&\&other)=default
+\begin{DoxyCompactList}\small\item\em Move construct a new \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLight_a0b27120f0ba5f0b3b38b3e8f32883da3}\label{classLight_a0b27120f0ba5f0b3b38b3e8f32883da3}} 
+\mbox{\hyperlink{classLight_a0b27120f0ba5f0b3b38b3e8f32883da3}{$\sim$\+Light}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight}{Light}} \& \mbox{\hyperlink{classLight_a4aa40c18db0c3fa59abcc3d279212a01}{operator=}} (const \mbox{\hyperlink{classLight}{Light}} \&other)=default
+\begin{DoxyCompactList}\small\item\em Copy a \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight}{Light}} \& \mbox{\hyperlink{classLight_a0f1010092b146d340a72b7b450a2c7bb}{operator=}} (\mbox{\hyperlink{classLight}{Light}} \&\&other)=default
+\begin{DoxyCompactList}\small\item\em Move a \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight}{Light}} \& \mbox{\hyperlink{classLight_a10395fa8e23c36d3cc28607b6078eb91}{operator+=}} (const \mbox{\hyperlink{classLight}{Light}} \&other)
+\begin{DoxyCompactList}\small\item\em addition of two lights \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight}{Light}} \& \mbox{\hyperlink{classLight_a1ca4e5f06eddca1a4b73a219b07e3b09}{operator-\/=}} (const \mbox{\hyperlink{classLight}{Light}} \&other)
+\begin{DoxyCompactList}\small\item\em subtraction of two lights \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight}{Light}} \mbox{\hyperlink{classLight_ad3069a2bcffb57e482006ddb91ab52cb}{operator+}} (const \mbox{\hyperlink{classLight}{Light}} \&other) const
+\begin{DoxyCompactList}\small\item\em addition of two lights \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight}{Light}} \mbox{\hyperlink{classLight_a01ec9a97e06513a7346c9be9e582c81a}{operator-\/}} (const \mbox{\hyperlink{classLight}{Light}} \&other) const
+\begin{DoxyCompactList}\small\item\em subtraction of two lights \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLight_a3068f23c0f535b8a20706b35de611e04}{operator==}} (const \mbox{\hyperlink{classLight}{Light}} \&other) const
+\begin{DoxyCompactList}\small\item\em compare two lights \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLight_a57a288ea66c75c68f9d55ed190b3cb98}{operator!=}} (const \mbox{\hyperlink{classLight}{Light}} \&other) const
+\begin{DoxyCompactList}\small\item\em compare two lights \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLight_a072a0404b2eb0090cb9aa6cd73ef8061}{get\+Ambient}} () const
+\begin{DoxyCompactList}\small\item\em Get the Ambient value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLight_aecaf4db31bbf741c2eb8e1410335b7ea}{get\+Diffuse}} () const
+\begin{DoxyCompactList}\small\item\em Get the Diffuse value. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \& \mbox{\hyperlink{classLight_a06dc69643fd466335ee9195897c8f6f1}{get\+Point\+Lights}} () const
+\begin{DoxyCompactList}\small\item\em Get the Point Lights. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \& \mbox{\hyperlink{classLight_a492d99944726d6dbe4186370ef58981e}{get\+Directional\+Lights}} () const
+\begin{DoxyCompactList}\small\item\em Get the Directional Lights. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLight_a2a3739cfba08172bb288b0a08c905efd}{set\+Ambient}} (double ambient)
+\begin{DoxyCompactList}\small\item\em Set the Ambient value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLight_ab47f85f7138549b4e737488105e93a21}{set\+Diffuse}} (double diffuse)
+\begin{DoxyCompactList}\small\item\em Set the Diffuse value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLight_ac43d848e454cf35812e9c3c6e41c08f5}{set\+Point\+Lights}} (const std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \&point\+Lights)
+\begin{DoxyCompactList}\small\item\em Set the Point Lights. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLight_a361f47cd717e7870591b55c0b73962dc}{set\+Directional\+Lights}} (const std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \&directional\+Lights)
+\begin{DoxyCompactList}\small\item\em Set the Directional Lights. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLight_a7ea46610fc41d198f4dd0ab8abe44b0e}{add\+Point\+Light}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&point\+Light)
+\begin{DoxyCompactList}\small\item\em Add new point light source. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLight_ac5948c02c35caa8d5c270b75435f844c}{add\+Directional\+Light}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&directional\+Light)
+\begin{DoxyCompactList}\small\item\em Add new directional light source. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLight_aa08bfb33a1d304c9fae1a1cac46acc37}\label{classLight_aa08bfb33a1d304c9fae1a1cac46acc37}} 
+void \mbox{\hyperlink{classLight_aa08bfb33a1d304c9fae1a1cac46acc37}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the light. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classColor}{Color}} \mbox{\hyperlink{classLight_a29fa7ec170d0508935daf8cef384b7eb}{get\+Color}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&point, const \mbox{\hyperlink{classVector3D}{Vector3D}} \&normal, \mbox{\hyperlink{classColor}{Color}} \&color) const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classColor}{Color}} of a point with the light settings. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classLight_a35309eb64817441be29d1c8f61628c04}{get\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{classLight}{Light}}\mbox{]} class of the light (inherits from \mbox{\hyperlink{classRaySetting}{Ray\+Setting}}) This class is used to define the light and to define the methods that the light must have (ex\+: addition, subtraction, ...) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+ambient} & the ambient light (0.\+0 -\/ 1.\+0) \\
+\hline
+{\em \+\_\+diffuse} & the diffuse light (0.\+0 -\/ 1.\+0) \\
+\hline
+{\em \+\_\+point\+Lights} & the point light sources (\mbox{\hyperlink{classVector3D}{Vector3D}}) \\
+\hline
+{\em \+\_\+directional\+Lights} & the directional light sources (\mbox{\hyperlink{classVector3D}{Vector3D}}) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLight_afdd449e3b54baf5271a7d3123b3994c2}\label{classLight_afdd449e3b54baf5271a7d3123b3994c2}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{double}]{ambient,  }\item[{double}]{diffuse,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \&}]{point\+Lights,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \&}]{directional\+Lights }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classLight}{Light}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ambient} & light (0.\+0 -\/ 1.\+0) \\
+\hline
+{\em diffuse} & light (0.\+0 -\/ 1.\+0) \\
+\hline
+{\em point\+Lights} & sources \\
+\hline
+{\em directional\+Lights} & sources \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLight_abffae712643319d2a079f26ced54dd96}\label{classLight_abffae712643319d2a079f26ced54dd96}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLight}{Light}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy construct a new \mbox{\hyperlink{classLight}{Light}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLight_a9e360d2884a0a9acd8164100591fd3f5}\label{classLight_a9e360d2884a0a9acd8164100591fd3f5}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLight}{Light}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move construct a new \mbox{\hyperlink{classLight}{Light}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLight_ac5948c02c35caa8d5c270b75435f844c}\label{classLight_ac5948c02c35caa8d5c270b75435f844c}} 
+\index{Light@{Light}!addDirectionalLight@{addDirectionalLight}}
+\index{addDirectionalLight@{addDirectionalLight}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{addDirectionalLight()}{addDirectionalLight()}}
+{\footnotesize\ttfamily void Light\+::add\+Directional\+Light (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{directional\+Light }\end{DoxyParamCaption})}
+
+
+
+Add new directional light source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directional\+Light} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLight_a7ea46610fc41d198f4dd0ab8abe44b0e}\label{classLight_a7ea46610fc41d198f4dd0ab8abe44b0e}} 
+\index{Light@{Light}!addPointLight@{addPointLight}}
+\index{addPointLight@{addPointLight}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{addPointLight()}{addPointLight()}}
+{\footnotesize\ttfamily void Light\+::add\+Point\+Light (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{point\+Light }\end{DoxyParamCaption})}
+
+
+
+Add new point light source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point\+Light} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLight_a072a0404b2eb0090cb9aa6cd73ef8061}\label{classLight_a072a0404b2eb0090cb9aa6cd73ef8061}} 
+\index{Light@{Light}!getAmbient@{getAmbient}}
+\index{getAmbient@{getAmbient}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getAmbient()}{getAmbient()}}
+{\footnotesize\ttfamily double Light\+::get\+Ambient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Ambient value. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a29fa7ec170d0508935daf8cef384b7eb}\label{classLight_a29fa7ec170d0508935daf8cef384b7eb}} 
+\index{Light@{Light}!getColor@{getColor}}
+\index{getColor@{getColor}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classColor}{Color}} Light\+::get\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{point,  }\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{normal,  }\item[{\mbox{\hyperlink{classColor}{Color}} \&}]{color }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{classColor}{Color}} of a point with the light settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & of the object \\
+\hline
+{\em normal} & of the object \\
+\hline
+{\em color} & of the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classColor}{Color}} of the object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_aecaf4db31bbf741c2eb8e1410335b7ea}\label{classLight_aecaf4db31bbf741c2eb8e1410335b7ea}} 
+\index{Light@{Light}!getDiffuse@{getDiffuse}}
+\index{getDiffuse@{getDiffuse}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getDiffuse()}{getDiffuse()}}
+{\footnotesize\ttfamily double Light\+::get\+Diffuse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Diffuse value. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a492d99944726d6dbe4186370ef58981e}\label{classLight_a492d99944726d6dbe4186370ef58981e}} 
+\index{Light@{Light}!getDirectionalLights@{getDirectionalLights}}
+\index{getDirectionalLights@{getDirectionalLights}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getDirectionalLights()}{getDirectionalLights()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{classVector3D}{Vector3D}}$>$\& Light\+::get\+Directional\+Lights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Directional Lights. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::vector$<$\+Vector3\+D$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a06dc69643fd466335ee9195897c8f6f1}\label{classLight_a06dc69643fd466335ee9195897c8f6f1}} 
+\index{Light@{Light}!getPointLights@{getPointLights}}
+\index{getPointLights@{getPointLights}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getPointLights()}{getPointLights()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{classVector3D}{Vector3D}}$>$\& Light\+::get\+Point\+Lights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Point Lights. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::vector$<$\+Vector3\+D$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a35309eb64817441be29d1c8f61628c04}\label{classLight_a35309eb64817441be29d1c8f61628c04}} 
+\index{Light@{Light}!getType@{getType}}
+\index{getType@{getType}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Light\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRaySetting_aa8aa2a871e8d5520a5d964c841114ebf}{Ray\+Setting}}.
+
+\mbox{\Hypertarget{classLight_a57a288ea66c75c68f9d55ed190b3cb98}\label{classLight_a57a288ea66c75c68f9d55ed190b3cb98}} 
+\index{Light@{Light}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Light\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLight}{Light}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+compare two lights 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true$\vert$false if the two lights are not the same or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_ad3069a2bcffb57e482006ddb91ab52cb}\label{classLight_ad3069a2bcffb57e482006ddb91ab52cb}} 
+\index{Light@{Light}!operator+@{operator+}}
+\index{operator+@{operator+}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLight}{Light}} Light\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLight}{Light}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+addition of two lights 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classLight}{Light}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a10395fa8e23c36d3cc28607b6078eb91}\label{classLight_a10395fa8e23c36d3cc28607b6078eb91}} 
+\index{Light@{Light}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLight}{Light}}\& Light\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLight}{Light}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+addition of two lights 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classLight}{Light}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a01ec9a97e06513a7346c9be9e582c81a}\label{classLight_a01ec9a97e06513a7346c9be9e582c81a}} 
+\index{Light@{Light}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLight}{Light}} Light\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLight}{Light}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+subtraction of two lights 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classLight}{Light}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a1ca4e5f06eddca1a4b73a219b07e3b09}\label{classLight_a1ca4e5f06eddca1a4b73a219b07e3b09}} 
+\index{Light@{Light}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLight}{Light}}\& Light\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLight}{Light}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+subtraction of two lights 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classLight}{Light}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a4aa40c18db0c3fa59abcc3d279212a01}\label{classLight_a4aa40c18db0c3fa59abcc3d279212a01}} 
+\index{Light@{Light}!operator=@{operator=}}
+\index{operator=@{operator=}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLight}{Light}}\& Light\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLight}{Light}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy a \mbox{\hyperlink{classLight}{Light}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classLight}{Light}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a0f1010092b146d340a72b7b450a2c7bb}\label{classLight_a0f1010092b146d340a72b7b450a2c7bb}} 
+\index{Light@{Light}!operator=@{operator=}}
+\index{operator=@{operator=}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLight}{Light}}\& Light\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLight}{Light}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move a \mbox{\hyperlink{classLight}{Light}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classLight}{Light}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a3068f23c0f535b8a20706b35de611e04}\label{classLight_a3068f23c0f535b8a20706b35de611e04}} 
+\index{Light@{Light}!operator==@{operator==}}
+\index{operator==@{operator==}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Light\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLight}{Light}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+compare two lights 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true$\vert$false if the two lights are the same or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLight_a2a3739cfba08172bb288b0a08c905efd}\label{classLight_a2a3739cfba08172bb288b0a08c905efd}} 
+\index{Light@{Light}!setAmbient@{setAmbient}}
+\index{setAmbient@{setAmbient}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{setAmbient()}{setAmbient()}}
+{\footnotesize\ttfamily void Light\+::set\+Ambient (\begin{DoxyParamCaption}\item[{double}]{ambient }\end{DoxyParamCaption})}
+
+
+
+Set the Ambient value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ambient} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLight_ab47f85f7138549b4e737488105e93a21}\label{classLight_ab47f85f7138549b4e737488105e93a21}} 
+\index{Light@{Light}!setDiffuse@{setDiffuse}}
+\index{setDiffuse@{setDiffuse}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{setDiffuse()}{setDiffuse()}}
+{\footnotesize\ttfamily void Light\+::set\+Diffuse (\begin{DoxyParamCaption}\item[{double}]{diffuse }\end{DoxyParamCaption})}
+
+
+
+Set the Diffuse value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em diffuse} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLight_a361f47cd717e7870591b55c0b73962dc}\label{classLight_a361f47cd717e7870591b55c0b73962dc}} 
+\index{Light@{Light}!setDirectionalLights@{setDirectionalLights}}
+\index{setDirectionalLights@{setDirectionalLights}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{setDirectionalLights()}{setDirectionalLights()}}
+{\footnotesize\ttfamily void Light\+::set\+Directional\+Lights (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \&}]{directional\+Lights }\end{DoxyParamCaption})}
+
+
+
+Set the Directional Lights. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directional\+Lights} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLight_ac43d848e454cf35812e9c3c6e41c08f5}\label{classLight_ac43d848e454cf35812e9c3c6e41c08f5}} 
+\index{Light@{Light}!setPointLights@{setPointLights}}
+\index{setPointLights@{setPointLights}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{setPointLights()}{setPointLights()}}
+{\footnotesize\ttfamily void Light\+::set\+Point\+Lights (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classVector3D}{Vector3D}} $>$ \&}]{point\+Lights }\end{DoxyParamCaption})}
+
+
+
+Set the Point Lights. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point\+Lights} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/Light.\+hpp\end{DoxyCompactItemize}

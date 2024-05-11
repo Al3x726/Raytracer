@@ -1,0 +1,93 @@
+\hypertarget{classConfig}{}\doxysection{Config Class Reference}
+\label{classConfig}\index{Config@{Config}}
+
+
+\mbox{[}\mbox{\hyperlink{classConfig}{Config}}\mbox{]} class of the config This class is used to define the config of the raytracer method factory and thiw class use the libconfig library to parse the config file and to define the methods that the config must have (ex\+: get\+Ray\+Setting, ...)  
+
+
+
+
+{\ttfamily \#include $<$Config.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classConfig_a24a15cf532089aef48ffbc9643423a65}{Config}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classConfig}{Config}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classConfig_afd1b8e9a2f731db838bb5856670e314c}\label{classConfig_afd1b8e9a2f731db838bb5856670e314c}} 
+\mbox{\hyperlink{classConfig_afd1b8e9a2f731db838bb5856670e314c}{$\sim$\+Config}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classConfig}{Config}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRaySetting}{Ray\+Setting}} $\ast$ \mbox{\hyperlink{classConfig_a012184ca83f9666b82f00f74540f7a54}{get\+Ray\+Setting}} (const std\+::string name)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classRay}{Ray}} Setting object by name (ex\+: \char`\"{}\+Camera\char`\"{}, \char`\"{}\+Light\char`\"{}) \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classIprimitives}{Iprimitives}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classConfig_a5ed2c491e11a2e1cfc6c08af643c2dfa}{get\+Ray\+Setting}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classRay}{Ray}} Setting object (ex\+: \char`\"{}\+Iprimitives\char`\"{}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{classConfig}{Config}}\mbox{]} class of the config This class is used to define the config of the raytracer method factory and thiw class use the libconfig library to parse the config file and to define the methods that the config must have (ex\+: get\+Ray\+Setting, ...) 
+
+\begin{DoxyAttention}{Attention}
+the config file must be in the format of the libconfig library and install the libconfig library
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+config} & the config (libconfig\+::\+Config) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classConfig_a24a15cf532089aef48ffbc9643423a65}\label{classConfig_a24a15cf532089aef48ffbc9643423a65}} 
+\index{Config@{Config}!Config@{Config}}
+\index{Config@{Config}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{Config()}{Config()}}
+{\footnotesize\ttfamily Config\+::\+Config (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classConfig}{Config}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & name of the config file \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classConfig_a5ed2c491e11a2e1cfc6c08af643c2dfa}\label{classConfig_a5ed2c491e11a2e1cfc6c08af643c2dfa}} 
+\index{Config@{Config}!getRaySetting@{getRaySetting}}
+\index{getRaySetting@{getRaySetting}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{getRaySetting()}{getRaySetting()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classIprimitives}{Iprimitives}} $\ast$$>$$\ast$ Config\+::get\+Ray\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classRay}{Ray}} Setting object (ex\+: \char`\"{}\+Iprimitives\char`\"{}) 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Iprimitives $\ast$$>$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConfig_a012184ca83f9666b82f00f74540f7a54}\label{classConfig_a012184ca83f9666b82f00f74540f7a54}} 
+\index{Config@{Config}!getRaySetting@{getRaySetting}}
+\index{getRaySetting@{getRaySetting}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{getRaySetting()}{getRaySetting()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRaySetting}{Ray\+Setting}}$\ast$ Config\+::get\+Ray\+Setting (\begin{DoxyParamCaption}\item[{const std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classRay}{Ray}} Setting object by name (ex\+: \char`\"{}\+Camera\char`\"{}, \char`\"{}\+Light\char`\"{}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & of the ray setting \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ray\+Setting$\ast$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/Config.\+hpp\end{DoxyCompactItemize}

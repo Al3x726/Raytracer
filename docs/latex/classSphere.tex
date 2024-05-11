@@ -1,0 +1,298 @@
+\hypertarget{classSphere}{}\doxysection{Sphere Class Reference}
+\label{classSphere}\index{Sphere@{Sphere}}
+
+
+\mbox{[}\mbox{\hyperlink{classSphere}{Sphere}}\mbox{]} class of the sphere primitive (inherits from \mbox{\hyperlink{classIprimitives}{Iprimitives}}) This class is used to define the sphere primitive and to define the methods that the sphere must have (ex\+: intersect, ...)  
+
+
+
+
+{\ttfamily \#include $<$Sphere.\+hpp$>$}
+
+Inheritance diagram for Sphere\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSphere}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSphere_a890a63ff583cb88e7ec4e840b4ef5eb9}\label{classSphere_a890a63ff583cb88e7ec4e840b4ef5eb9}} 
+\mbox{\hyperlink{classSphere_a890a63ff583cb88e7ec4e840b4ef5eb9}{Sphere}} ()
+\begin{DoxyCompactList}\small\item\em Default construct a new \mbox{\hyperlink{classSphere}{Sphere}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSphere_a06cf65d1790afa37bdf291c85678189b}{Sphere}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&center, const double \&radius, \mbox{\hyperlink{classColor}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classSphere}{Sphere}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSphere_a48be7e5a0445c1094b024a175f0dd9a1}{Sphere}} (const \mbox{\hyperlink{classSphere}{Sphere}} \&other)=default
+\begin{DoxyCompactList}\small\item\em Copy construt a new \mbox{\hyperlink{classSphere}{Sphere}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSphere_ae8e4384a452a8c877bbb5ea1367b0474}{Sphere}} (\mbox{\hyperlink{classSphere}{Sphere}} \&\&other)=default
+\begin{DoxyCompactList}\small\item\em Move construct a new \mbox{\hyperlink{classSphere}{Sphere}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSphere_a8b5c6d6c294bdbc48d48907cd229f424}\label{classSphere_a8b5c6d6c294bdbc48d48907cd229f424}} 
+\mbox{\hyperlink{classSphere_a8b5c6d6c294bdbc48d48907cd229f424}{$\sim$\+Sphere}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classSphere}{Sphere}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSphere}{Sphere}} \& \mbox{\hyperlink{classSphere_aeccdb148fe79d17a07532646182bfc14}{operator=}} (const \mbox{\hyperlink{classSphere}{Sphere}} \&other)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSphere}{Sphere}} \& \mbox{\hyperlink{classSphere_ae1e3b1a99e442f8809c07bcfc83b37f2}{operator=}} (\mbox{\hyperlink{classSphere}{Sphere}} \&\&other)=default
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classVector3D}{Vector3D}} \& \mbox{\hyperlink{classSphere_a36596a81c2cb62c702edece54f0e39a0}{get\+Center}} () const
+\begin{DoxyCompactList}\small\item\em Get the Center of the sphere. \end{DoxyCompactList}\item 
+const double \& \mbox{\hyperlink{classSphere_ad1ea7c924fa4a5f1030249e6e2e5a1c5}{get\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em Get the Radius of the sphere. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSphere_a5dc23963e83e943b8854a3153297ab27}{set\+Center}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&center)
+\begin{DoxyCompactList}\small\item\em Set the Center of the sphere. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSphere_a07470e0ea0d1a7aa8e10a6fce9a36371}{set\+Radius}} (const double \&radius)
+\begin{DoxyCompactList}\small\item\em Set the Radius of the sphere. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classColor}{Color}} \& \mbox{\hyperlink{classSphere_a9fdadf2f8457e59eca95355b9fd4a138}{get\+Color}} () const override
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classColor}{Color}} of the sphere. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSphere_a6632a059db0ca38276677031c1af8812}{intersect}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray, float \&t) const override
+\begin{DoxyCompactList}\small\item\em method to intersect a ray with a sphere (if there is an intersection) and to get the intersection point \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSphere_a7a4c22c77f85f01758a4065e14286cfa}{normalize}} () const override
+\begin{DoxyCompactList}\small\item\em method to normalize the sphere \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classSphere_acb69844b846e2c0a98337bd720ddfec0}{get\+Normal}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&point) const override
+\begin{DoxyCompactList}\small\item\em method to get the normal of the sphere at a given point \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{classSphere}{Sphere}}\mbox{]} class of the sphere primitive (inherits from \mbox{\hyperlink{classIprimitives}{Iprimitives}}) This class is used to define the sphere primitive and to define the methods that the sphere must have (ex\+: intersect, ...) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+center} & the center of the sphere (\mbox{\hyperlink{classVector3D}{Vector3D}}) \\
+\hline
+{\em \+\_\+radius} & the radius of the sphere (double) \\
+\hline
+{\em \+\_\+color} & the color of the sphere (\mbox{\hyperlink{classColor}{Color}}) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSphere_a06cf65d1790afa37bdf291c85678189b}\label{classSphere_a06cf65d1790afa37bdf291c85678189b}} 
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{Sphere()}{Sphere()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{center,  }\item[{const double \&}]{radius,  }\item[{\mbox{\hyperlink{classColor}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classSphere}{Sphere}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & \\
+\hline
+{\em radius} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSphere_a48be7e5a0445c1094b024a175f0dd9a1}\label{classSphere_a48be7e5a0445c1094b024a175f0dd9a1}} 
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{Sphere()}{Sphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSphere}{Sphere}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy construt a new \mbox{\hyperlink{classSphere}{Sphere}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSphere_ae8e4384a452a8c877bbb5ea1367b0474}\label{classSphere_ae8e4384a452a8c877bbb5ea1367b0474}} 
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{Sphere()}{Sphere()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSphere}{Sphere}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move construct a new \mbox{\hyperlink{classSphere}{Sphere}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSphere_a36596a81c2cb62c702edece54f0e39a0}\label{classSphere_a36596a81c2cb62c702edece54f0e39a0}} 
+\index{Sphere@{Sphere}!getCenter@{getCenter}}
+\index{getCenter@{getCenter}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{getCenter()}{getCenter()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVector3D}{Vector3D}}\& Sphere\+::get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Center of the sphere. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classVector3D}{Vector3D}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSphere_a9fdadf2f8457e59eca95355b9fd4a138}\label{classSphere_a9fdadf2f8457e59eca95355b9fd4a138}} 
+\index{Sphere@{Sphere}!getColor@{getColor}}
+\index{getColor@{getColor}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classColor}{Color}}\& Sphere\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{classColor}{Color}} of the sphere. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classColor}{Color}}\& 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIprimitives_a4d10894fa680a116de438019322640b4}{Iprimitives}}.
+
+\mbox{\Hypertarget{classSphere_acb69844b846e2c0a98337bd720ddfec0}\label{classSphere_acb69844b846e2c0a98337bd720ddfec0}} 
+\index{Sphere@{Sphere}!getNormal@{getNormal}}
+\index{getNormal@{getNormal}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{getNormal()}{getNormal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Sphere\+::get\+Normal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+method to get the normal of the sphere at a given point 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3D}{Vector3D}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIprimitives_ab0963de1f71a9fe8e0f0bf2d8876990d}{Iprimitives}}.
+
+\mbox{\Hypertarget{classSphere_ad1ea7c924fa4a5f1030249e6e2e5a1c5}\label{classSphere_ad1ea7c924fa4a5f1030249e6e2e5a1c5}} 
+\index{Sphere@{Sphere}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily const double\& Sphere\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Radius of the sphere. 
+
+\begin{DoxyReturn}{Returns}
+const double\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSphere_a6632a059db0ca38276677031c1af8812}\label{classSphere_a6632a059db0ca38276677031c1af8812}} 
+\index{Sphere@{Sphere}!intersect@{intersect}}
+\index{intersect@{intersect}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily bool Sphere\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray,  }\item[{float \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+method to intersect a ray with a sphere (if there is an intersection) and to get the intersection point 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & to intersect with the scene \\
+\hline
+{\em intersection} & point if there is one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true$\vert$false if there is an intersection or not 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIprimitives_a8ce48cc36d3c42d752db976c59bfe174}{Iprimitives}}.
+
+\mbox{\Hypertarget{classSphere_a7a4c22c77f85f01758a4065e14286cfa}\label{classSphere_a7a4c22c77f85f01758a4065e14286cfa}} 
+\index{Sphere@{Sphere}!normalize@{normalize}}
+\index{normalize@{normalize}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Sphere\+::normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+method to normalize the sphere 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3D}{Vector3D}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIprimitives_af8b22fb48e1bc8687f895d3ebc94408b}{Iprimitives}}.
+
+\mbox{\Hypertarget{classSphere_aeccdb148fe79d17a07532646182bfc14}\label{classSphere_aeccdb148fe79d17a07532646182bfc14}} 
+\index{Sphere@{Sphere}!operator=@{operator=}}
+\index{operator=@{operator=}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSphere}{Sphere}}\& Sphere\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSphere}{Sphere}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classSphere}{Sphere}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSphere_ae1e3b1a99e442f8809c07bcfc83b37f2}\label{classSphere_ae1e3b1a99e442f8809c07bcfc83b37f2}} 
+\index{Sphere@{Sphere}!operator=@{operator=}}
+\index{operator=@{operator=}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSphere}{Sphere}}\& Sphere\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSphere}{Sphere}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classSphere}{Sphere}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSphere_a5dc23963e83e943b8854a3153297ab27}\label{classSphere_a5dc23963e83e943b8854a3153297ab27}} 
+\index{Sphere@{Sphere}!setCenter@{setCenter}}
+\index{setCenter@{setCenter}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{setCenter()}{setCenter()}}
+{\footnotesize\ttfamily void Sphere\+::set\+Center (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{center }\end{DoxyParamCaption})}
+
+
+
+Set the Center of the sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSphere_a07470e0ea0d1a7aa8e10a6fce9a36371}\label{classSphere_a07470e0ea0d1a7aa8e10a6fce9a36371}} 
+\index{Sphere@{Sphere}!setRadius@{setRadius}}
+\index{setRadius@{setRadius}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{setRadius()}{setRadius()}}
+{\footnotesize\ttfamily void Sphere\+::set\+Radius (\begin{DoxyParamCaption}\item[{const double \&}]{radius }\end{DoxyParamCaption})}
+
+
+
+Set the Radius of the sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/Sphere.\+hpp\end{DoxyCompactItemize}

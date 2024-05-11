@@ -1,0 +1,122 @@
+\hypertarget{classIprimitives}{}\doxysection{Iprimitives Class Reference}
+\label{classIprimitives}\index{Iprimitives@{Iprimitives}}
+
+
+\mbox{[}\mbox{\hyperlink{classIprimitives}{Iprimitives}}\mbox{]} Abstract class of primitives (used to define the type of the primitive) ex\+: \mbox{\hyperlink{classSphere}{Sphere}}, \mbox{\hyperlink{classPlane}{Plane}}, Cube, ... This class is used to define the type of the primitive and to define the methods that the primitive must have (ex\+: intersect, normalize, get\+Normal, ...)  
+
+
+
+
+{\ttfamily \#include $<$Iprimitives.\+hpp$>$}
+
+Inheritance diagram for Iprimitives\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIprimitives}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIprimitives_a59382af3b185c29d038be7b459aaac1b}\label{classIprimitives_a59382af3b185c29d038be7b459aaac1b}} 
+virtual \mbox{\hyperlink{classIprimitives_a59382af3b185c29d038be7b459aaac1b}{$\sim$\+Iprimitives}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classIprimitives}{Iprimitives}} (virtual because it\textquotesingle{}s an abstract class) \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIprimitives_a8ce48cc36d3c42d752db976c59bfe174}{intersect}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray, float \&t) const =0
+\begin{DoxyCompactList}\small\item\em Check if there is an intersection between the ray and the scene. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classIprimitives_af8b22fb48e1bc8687f895d3ebc94408b}{normalize}} () const =0
+\begin{DoxyCompactList}\small\item\em Normalize the vector to a length of 1 for the calculations of the intersection point and the normal. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classIprimitives_ab0963de1f71a9fe8e0f0bf2d8876990d}{get\+Normal}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&intersection) const =0
+\begin{DoxyCompactList}\small\item\em Get the Normal of the primitive at the intersection point. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{classColor}{Color}} \& \mbox{\hyperlink{classIprimitives_a4d10894fa680a116de438019322640b4}{get\+Color}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classColor}{Color}} of the primitive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{classIprimitives}{Iprimitives}}\mbox{]} Abstract class of primitives (used to define the type of the primitive) ex\+: \mbox{\hyperlink{classSphere}{Sphere}}, \mbox{\hyperlink{classPlane}{Plane}}, Cube, ... This class is used to define the type of the primitive and to define the methods that the primitive must have (ex\+: intersect, normalize, get\+Normal, ...) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIprimitives_a4d10894fa680a116de438019322640b4}\label{classIprimitives_a4d10894fa680a116de438019322640b4}} 
+\index{Iprimitives@{Iprimitives}!getColor@{getColor}}
+\index{getColor@{getColor}!Iprimitives@{Iprimitives}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{classColor}{Color}}\& Iprimitives\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the \mbox{\hyperlink{classColor}{Color}} of the primitive. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classColor}{Color}}\& 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSphere_a9fdadf2f8457e59eca95355b9fd4a138}{Sphere}}, \mbox{\hyperlink{classPlane_acf382b31b018691a3b9b969f7867a95b}{Plane}}, \mbox{\hyperlink{classCylinder_a4510bdc798d59f03d9f2d861bdbedab2}{Cylinder}}, and \mbox{\hyperlink{classCone_a3859ca2f11b12c362e324b5f724beec3}{Cone}}.
+
+\mbox{\Hypertarget{classIprimitives_ab0963de1f71a9fe8e0f0bf2d8876990d}\label{classIprimitives_ab0963de1f71a9fe8e0f0bf2d8876990d}} 
+\index{Iprimitives@{Iprimitives}!getNormal@{getNormal}}
+\index{getNormal@{getNormal}!Iprimitives@{Iprimitives}}
+\doxysubsubsection{\texorpdfstring{getNormal()}{getNormal()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classVector3D}{Vector3D}} Iprimitives\+::get\+Normal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{intersection }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Normal of the primitive at the intersection point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intersection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3D}{Vector3D}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSphere_acb69844b846e2c0a98337bd720ddfec0}{Sphere}}, \mbox{\hyperlink{classPlane_a64a13c10c97a5cde990fadd41b0148ae}{Plane}}, \mbox{\hyperlink{classCylinder_ae28169297d5fa9893e22b6a73cc58ad2}{Cylinder}}, and \mbox{\hyperlink{classCone_a26caaae69312808d68c8f4330382bcb9}{Cone}}.
+
+\mbox{\Hypertarget{classIprimitives_a8ce48cc36d3c42d752db976c59bfe174}\label{classIprimitives_a8ce48cc36d3c42d752db976c59bfe174}} 
+\index{Iprimitives@{Iprimitives}!intersect@{intersect}}
+\index{intersect@{intersect}!Iprimitives@{Iprimitives}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily virtual bool Iprimitives\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray,  }\item[{float \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if there is an intersection between the ray and the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & to check the intersection with the scene \\
+\hline
+{\em t} & the distance between the ray and the intersection point (if there is one) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true$\vert$false if there is an intersection 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSphere_a6632a059db0ca38276677031c1af8812}{Sphere}}, \mbox{\hyperlink{classPlane_a7fae7379c9f3ce3c6c2e558ea209d069}{Plane}}, \mbox{\hyperlink{classCylinder_ab51fe1141cc5603e2bc2d424b123fcc6}{Cylinder}}, and \mbox{\hyperlink{classCone_a612563f1619c6e9fd91f202588d30b76}{Cone}}.
+
+\mbox{\Hypertarget{classIprimitives_af8b22fb48e1bc8687f895d3ebc94408b}\label{classIprimitives_af8b22fb48e1bc8687f895d3ebc94408b}} 
+\index{Iprimitives@{Iprimitives}!normalize@{normalize}}
+\index{normalize@{normalize}!Iprimitives@{Iprimitives}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classVector3D}{Vector3D}} Iprimitives\+::normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Normalize the vector to a length of 1 for the calculations of the intersection point and the normal. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3D}{Vector3D}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSphere_a7a4c22c77f85f01758a4065e14286cfa}{Sphere}}, \mbox{\hyperlink{classPlane_ae4ec611cc3f6b9001e8ac09762845671}{Plane}}, \mbox{\hyperlink{classCylinder_aaa94fcbc3d03f1ecdff91079e0ec9d1e}{Cylinder}}, and \mbox{\hyperlink{classCone_ad31d01354a171695dea10cc1a570f0ac}{Cone}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/Iprimitives.\+hpp\end{DoxyCompactItemize}
