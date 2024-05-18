@@ -1,5 +1,5 @@
 # Usage :
 
 ```
-make && ./my_rpg
+make && ./raytracer scene.cfg
 ```
